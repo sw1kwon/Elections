@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -175,7 +175,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -206,9 +206,51 @@ window.Quarto = {
 <table class="quarto-listing-table table">
 <thead>
 <tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1752073200000" data-listing-file-modified-sort="1752110647071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-title-sort="Presidential Elections 14th ~ 16th" data-listing-filename-sort="p14_16.ipynb">
+<td>
+<span class="listing-date">Jul 10, 2025</span>
+</td>
+<td>
+<a href="./posts/p14_16.html" class="title listing-title">Presidential Elections 14th ~ 16th</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1752073200000" data-listing-file-modified-sort="1752110235039" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Presidential Elections 18th ~ 21st" data-listing-filename-sort="p18_21.ipynb">
+<td>
+<span class="listing-date">Jul 10, 2025</span>
+</td>
+<td>
+<a href="./posts/p18_21.html" class="title listing-title">Presidential Elections 18th ~ 21st</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1752073200000" data-listing-file-modified-sort="1752110681019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Presidential Elections 17th" data-listing-filename-sort="p17.ipynb">
+<td>
+<span class="listing-date">Jul 10, 2025</span>
+</td>
+<td>
+<a href="./posts/p17.html" class="title listing-title">Presidential Elections 17th</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
 </tbody>
 </table>
 <div class="listing-no-matching d-none">
