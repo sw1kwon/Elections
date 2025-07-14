@@ -9,7 +9,7 @@
 <meta name="author" content="sw1kwon">
 <meta name="dcterms.date" content="2025-07-10">
 
-<title>Presidential Elections 14th ~ 16th – Elections</title>
+<title>Presidential Elections 14th ~ 16th (v1) – Elections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Presidential Elections 14th ~ 16th</h1>
+      <h1 class="title">Presidential Elections 14th ~ 16th (v1)</h1>
                       </div>
   </div>
     
@@ -965,11 +965,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무표투표수'</span>: <span class="st">'무효투표수'</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-7" class="cell" data-outputid="21bdcaa9-5dc4-4fb3-ede5-224fed84a98e" data-execution_count="49">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_16th.rename(columns<span class="op">=</span>rename_dict16)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-7" class="cell" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>rename_dict16 <span class="op">=</span> {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'시도명'</span>: <span class="st">'시도'</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'위원회명_clean'</span>: <span class="st">'구시군'</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'이회창'</span>: <span class="st">'득표수_1_한나라당_이회창'</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'노무현'</span>: <span class="st">'득표수_2_새천년민주당_노무현'</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'이한동'</span>: <span class="st">'득표수_3_하나로국민연합_이한동'</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'권영길'</span>: <span class="st">'득표수_4_민주노동당_권영길'</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'김영규'</span>: <span class="st">'득표수_5_사회당_김영규'</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'김길수'</span>: <span class="st">'득표수_6_호국당_김길수'</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'유효투표수'</span>: <span class="st">'득표수_계'</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무표투표수'</span>: <span class="st">'무효투표수'</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-8" class="cell" data-outputid="7650aa38-2074-4604-f40b-aaaad88c65b3" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_16th.rename(columns<span class="op">=</span>rename_dict16)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="49">
 
-  <div id="df-30262b98-458b-4f7e-9b56-7c4eb27ba85d" class="colab-df-container">
+  <div id="df-c1b5b6b3-b9a4-424f-baf8-f70eec29cf77" class="colab-df-container">
     <div>
 
 
@@ -977,7 +991,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">시도명</th>
+<th data-quarto-table-cell-role="th">시도</th>
 <th data-quarto-table-cell-role="th">구시군</th>
 <th data-quarto-table-cell-role="th">선거인수</th>
 <th data-quarto-table-cell-role="th">투표수</th>
@@ -1177,7 +1191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-30262b98-458b-4f7e-9b56-7c4eb27ba85d')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c1b5b6b3-b9a4-424f-baf8-f70eec29cf77')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1227,12 +1241,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-30262b98-458b-4f7e-9b56-7c4eb27ba85d button.colab-df-convert');
+        document.querySelector('#df-c1b5b6b3-b9a4-424f-baf8-f70eec29cf77 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-30262b98-458b-4f7e-9b56-7c4eb27ba85d');
+        const element = document.querySelector('#df-c1b5b6b3-b9a4-424f-baf8-f70eec29cf77');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1252,8 +1266,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-40919447-dfd1-4f9c-9319-76d3fe255398">
-      <button class="colab-df-quickchart" onclick="quickchart('df-40919447-dfd1-4f9c-9319-76d3fe255398')" title="Suggest charts" style="display:none;">
+    <div id="df-67a00189-035e-46f1-a13c-6a6f8870a5ff">
+      <button class="colab-df-quickchart" onclick="quickchart('df-67a00189-035e-46f1-a13c-6a6f8870a5ff')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1369,7 +1383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-40919447-dfd1-4f9c-9319-76d3fe255398 button');
+            document.querySelector('#df-67a00189-035e-46f1-a13c-6a6f8870a5ff button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1380,14 +1394,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-8" class="cell" data-execution_count="50">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_16th <span class="op">=</span> df_16th.rename(columns<span class="op">=</span>rename_dict16)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-9" class="cell" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_16th <span class="op">=</span> df_16th.rename(columns<span class="op">=</span>rename_dict16)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-9" class="cell" data-outputid="b8e3ef5f-db6c-47ce-ea65-2f162af4e529" data-execution_count="51">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_16th[df_16th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-10" class="cell" data-outputid="7635ead9-a5eb-4ae5-95a8-1e9d3b60ab75" data-execution_count="51">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_16th[df_16th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="51">
 
-  <div id="df-8b3ee01d-284d-4f7a-8aa2-5ff4c1d8b52b" class="colab-df-container">
+  <div id="df-97e16d1e-c560-465b-8aac-c417aaa9e41c" class="colab-df-container">
     <div>
 
 
@@ -1395,7 +1409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">시도명</th>
+<th data-quarto-table-cell-role="th">시도</th>
 <th data-quarto-table-cell-role="th">구시군</th>
 <th data-quarto-table-cell-role="th">선거인수</th>
 <th data-quarto-table-cell-role="th">투표수</th>
@@ -1690,7 +1704,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8b3ee01d-284d-4f7a-8aa2-5ff4c1d8b52b')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-97e16d1e-c560-465b-8aac-c417aaa9e41c')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1740,12 +1754,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8b3ee01d-284d-4f7a-8aa2-5ff4c1d8b52b button.colab-df-convert');
+        document.querySelector('#df-97e16d1e-c560-465b-8aac-c417aaa9e41c button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8b3ee01d-284d-4f7a-8aa2-5ff4c1d8b52b');
+        const element = document.querySelector('#df-97e16d1e-c560-465b-8aac-c417aaa9e41c');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1765,8 +1779,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-8f7ae1d0-9948-4def-9eec-09f947e4e795">
-      <button class="colab-df-quickchart" onclick="quickchart('df-8f7ae1d0-9948-4def-9eec-09f947e4e795')" title="Suggest charts" style="display:none;">
+    <div id="df-13f27745-80b0-42ad-8f3e-c0aea717a9eb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-13f27745-80b0-42ad-8f3e-c0aea717a9eb')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1882,7 +1896,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-8f7ae1d0-9948-4def-9eec-09f947e4e795 button');
+            document.querySelector('#df-13f27745-80b0-42ad-8f3e-c0aea717a9eb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1893,217 +1907,217 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-10" class="cell" data-execution_count="52">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_16th.to_csv(<span class="st">"temp1_president_16.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-11" class="cell" data-execution_count="52">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df_16th.to_csv(<span class="st">"temp1_president_16.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="th_1997" class="level1">
 <h1>15th_1997</h1>
-<div id="cell-12" class="cell" data-execution_count="53">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 15대 대통령선거 데이터 전처리 함수</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_github_url_to_raw(github_url):</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co">    깃허브 blob URL을 raw URL로 변환</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co">    github_url : 깃허브 파일 URL</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co">    raw URL (pandas가 직접 읽을 수 있는 형태)</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/file.xls"</span></span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="co">    raw_url = convert_github_url_to_raw(blob_url)</span></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="co">    # "https://github.com/user/repo/raw/main/file.xls"</span></span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'/blob/'</span> <span class="kw">in</span> github_url:</span>
-<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> github_url.replace(<span class="st">'/blob/'</span>, <span class="st">'/raw/'</span>)</span>
-<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> github_url</span>
-<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_15th_presidential_election(file_path):</span>
-<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a><span class="co">    15대 대통령선거 데이터 전처리 함수</span></span>
-<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a><span class="co">    엑셀 파일 구조:</span></span>
-<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a><span class="co">    - 0행: 헤더 첫 번째 줄</span></span>
-<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1행: 헤더 두 번째 줄</span></span>
-<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a><span class="co">    - 2행: 헤더 세 번째 줄</span></span>
-<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a><span class="co">    - 3행: 헤더 네 번째 줄</span></span>
-<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a><span class="co">    - 4행부터: 실제 데이터</span></span>
-<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a><span class="co">    특별한 필터링 조건:</span></span>
-<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a><span class="co">    - 구시군명에 "합계" 포함</span></span>
-<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a><span class="co">    - 읍면동명에 "소계" 포함</span></span>
-<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a><span class="co">    file_path : 파일 경로 (로컬 파일, 깃허브 blob URL, 또는 raw URL)</span></span>
-<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a><span class="co">        - 로컬: "./data/15대_선거결과.xls"</span></span>
-<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 blob: "https://github.com/user/repo/blob/main/파일.xls" (자동 변환됨)</span></span>
-<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 raw: "https://github.com/user/repo/raw/main/파일.xls"</span></span>
-<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a><span class="co">    전처리된 선거 데이터 (pandas DataFrame, 합계 및 소계 행만 포함)</span></span>
-<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
-<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a><span class="co">    # 깃허브에서 불러오기 (blob URL 그대로 사용 - 자동 변환됨)</span></span>
-<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/15대/선거결과.xls"</span></span>
-<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_15th_presidential_election(blob_url)</span></span>
-<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a><span class="co">    # 로컬 파일 불러오기</span></span>
-<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_15th_presidential_election("./data/15대_선거결과.xls")</span></span>
-<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. 파일 로드 (자동 감지)</span></span>
-<span id="cb12-68"><a href="#cb12-68" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-69"><a href="#cb12-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> file_path.startswith((<span class="st">'http://'</span>, <span class="st">'https://'</span>)):</span>
-<span id="cb12-70"><a href="#cb12-70" aria-hidden="true" tabindex="-1"></a>        <span class="co"># URL인 경우 - blob URL이면 raw URL로 변환</span></span>
-<span id="cb12-71"><a href="#cb12-71" aria-hidden="true" tabindex="-1"></a>        raw_url <span class="op">=</span> convert_github_url_to_raw(file_path)</span>
-<span id="cb12-72"><a href="#cb12-72" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"웹에서 파일 로드: </span><span class="sc">{</span>raw_url<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-73"><a href="#cb12-73" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> raw_url <span class="op">!=</span> file_path:</span>
-<span id="cb12-74"><a href="#cb12-74" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  (blob URL을 raw URL로 자동 변환)"</span>)</span>
-<span id="cb12-75"><a href="#cb12-75" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(raw_url, header<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb12-76"><a href="#cb12-76" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb12-77"><a href="#cb12-77" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 로컬 파일인 경우</span></span>
-<span id="cb12-78"><a href="#cb12-78" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"로컬에서 파일 로드: </span><span class="sc">{</span>file_path<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-79"><a href="#cb12-79" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(file_path, header<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb12-80"><a href="#cb12-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-81"><a href="#cb12-81" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"원본 데이터 크기: </span><span class="sc">{</span>df_all<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-82"><a href="#cb12-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-83"><a href="#cb12-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-84"><a href="#cb12-84" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. 복합 헤더 구성 (0~3행 병합)</span></span>
-<span id="cb12-85"><a href="#cb12-85" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-86"><a href="#cb12-86" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 파이썬 인덱스는 0부터 시작하므로:</span></span>
-<span id="cb12-87"><a href="#cb12-87" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 0행 = iloc[0] (실제 1번째 행)</span></span>
-<span id="cb12-88"><a href="#cb12-88" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1행 = iloc[1] (실제 2번째 행)</span></span>
-<span id="cb12-89"><a href="#cb12-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2행 = iloc[2] (실제 3번째 행)</span></span>
-<span id="cb12-90"><a href="#cb12-90" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3행 = iloc[3] (실제 4번째 행)</span></span>
-<span id="cb12-91"><a href="#cb12-91" aria-hidden="true" tabindex="-1"></a>    header_row_1 <span class="op">=</span> df_all.iloc[<span class="dv">0</span>].fillna(<span class="st">""</span>)  <span class="co"># 첫 번째 헤더 행</span></span>
-<span id="cb12-92"><a href="#cb12-92" aria-hidden="true" tabindex="-1"></a>    header_row_2 <span class="op">=</span> df_all.iloc[<span class="dv">1</span>].fillna(<span class="st">""</span>)  <span class="co"># 두 번째 헤더 행</span></span>
-<span id="cb12-93"><a href="#cb12-93" aria-hidden="true" tabindex="-1"></a>    header_row_3 <span class="op">=</span> df_all.iloc[<span class="dv">2</span>].fillna(<span class="st">""</span>)  <span class="co"># 세 번째 헤더 행</span></span>
-<span id="cb12-94"><a href="#cb12-94" aria-hidden="true" tabindex="-1"></a>    header_row_4 <span class="op">=</span> df_all.iloc[<span class="dv">3</span>].fillna(<span class="st">""</span>)  <span class="co"># 네 번째 헤더 행</span></span>
-<span id="cb12-95"><a href="#cb12-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-96"><a href="#cb12-96" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4개 헤더 행을 "_"로 연결하여 통합 헤더 생성</span></span>
-<span id="cb12-97"><a href="#cb12-97" aria-hidden="true" tabindex="-1"></a>    combined_headers <span class="op">=</span> (</span>
-<span id="cb12-98"><a href="#cb12-98" aria-hidden="true" tabindex="-1"></a>        header_row_1.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb12-99"><a href="#cb12-99" aria-hidden="true" tabindex="-1"></a>        header_row_2.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb12-100"><a href="#cb12-100" aria-hidden="true" tabindex="-1"></a>        header_row_3.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb12-101"><a href="#cb12-101" aria-hidden="true" tabindex="-1"></a>        header_row_4.astype(<span class="bu">str</span>)</span>
-<span id="cb12-102"><a href="#cb12-102" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb12-103"><a href="#cb12-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-104"><a href="#cb12-104" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"4개 헤더 행 병합 완료"</span>)</span>
-<span id="cb12-105"><a href="#cb12-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-106"><a href="#cb12-106" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-107"><a href="#cb12-107" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. 실제 데이터 추출 (4행부터)</span></span>
-<span id="cb12-108"><a href="#cb12-108" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-109"><a href="#cb12-109" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4행 = iloc[4] (실제 5번째 행)부터 데이터 시작</span></span>
-<span id="cb12-110"><a href="#cb12-110" aria-hidden="true" tabindex="-1"></a>    df_data <span class="op">=</span> df_all.iloc[<span class="dv">4</span>:].copy()</span>
-<span id="cb12-111"><a href="#cb12-111" aria-hidden="true" tabindex="-1"></a>    df_data.columns <span class="op">=</span> combined_headers</span>
-<span id="cb12-112"><a href="#cb12-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-113"><a href="#cb12-113" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"데이터 추출 후 크기: </span><span class="sc">{</span>df_data<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-114"><a href="#cb12-114" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"컬럼 수: </span><span class="sc">{</span><span class="bu">len</span>(df_data.columns)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-115"><a href="#cb12-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-116"><a href="#cb12-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-117"><a href="#cb12-117" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. 주요 컬럼 추출</span></span>
-<span id="cb12-118"><a href="#cb12-118" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-119"><a href="#cb12-119" aria-hidden="true" tabindex="-1"></a>    gugun_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"구시군명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
-<span id="cb12-120"><a href="#cb12-120" aria-hidden="true" tabindex="-1"></a>    dong_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"읍면동명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
-<span id="cb12-121"><a href="#cb12-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-122"><a href="#cb12-122" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"주요 컬럼:"</span>)</span>
-<span id="cb12-123"><a href="#cb12-123" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 구시군: </span><span class="sc">{</span>gugun_column<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-124"><a href="#cb12-124" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 읍면동: </span><span class="sc">{</span>dong_column<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-125"><a href="#cb12-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-126"><a href="#cb12-126" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-127"><a href="#cb12-127" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 5. 합계 및 소계 행 필터링</span></span>
-<span id="cb12-128"><a href="#cb12-128" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-129"><a href="#cb12-129" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 15대 특별 조건:</span></span>
-<span id="cb12-130"><a href="#cb12-130" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 구시군명에 "합계" 포함</span></span>
-<span id="cb12-131"><a href="#cb12-131" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 읍면동명에 "소계" 포함</span></span>
-<span id="cb12-132"><a href="#cb12-132" aria-hidden="true" tabindex="-1"></a>    filter_mask <span class="op">=</span> (</span>
-<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a>        df_data[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>) <span class="op">|</span></span>
-<span id="cb12-134"><a href="#cb12-134" aria-hidden="true" tabindex="-1"></a>        df_data[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb12-135"><a href="#cb12-135" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb12-136"><a href="#cb12-136" aria-hidden="true" tabindex="-1"></a>    df_filtered <span class="op">=</span> df_data[filter_mask].copy()</span>
-<span id="cb12-137"><a href="#cb12-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-138"><a href="#cb12-138" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"필터링 후 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-139"><a href="#cb12-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-140"><a href="#cb12-140" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 필터링 결과 상세 정보</span></span>
-<span id="cb12-141"><a href="#cb12-141" aria-hidden="true" tabindex="-1"></a>    total_rows <span class="op">=</span> df_filtered[</span>
-<span id="cb12-142"><a href="#cb12-142" aria-hidden="true" tabindex="-1"></a>        df_filtered[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb12-143"><a href="#cb12-143" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
-<span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a>    subtotal_rows <span class="op">=</span> df_filtered[</span>
-<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a>        df_filtered[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
-<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 합계 행: </span><span class="sc">{</span>total_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
-<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 소계 행: </span><span class="sc">{</span>subtotal_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
-<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 6. 수치형 컬럼 정리</span></span>
-<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3번째 컬럼(인덱스 3)부터는 보통 득표수 등 수치 데이터</span></span>
-<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>    numeric_columns <span class="op">=</span> df_filtered.columns[<span class="dv">3</span>:]</span>
-<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"수치형 컬럼 개수: </span><span class="sc">{</span><span class="bu">len</span>(numeric_columns)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> numeric_columns:</span>
-<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 쉼표 제거 → 공백 제거 → 빈값을 0으로 → 정수형 변환</span></span>
-<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a>        df_filtered[col] <span class="op">=</span> (</span>
-<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a>            df_filtered[col]</span>
-<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">str</span>)           <span class="co"># 문자열로 변환</span></span>
-<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>            .fillna(<span class="st">"0"</span>)           <span class="co"># NaN 값을 "0" 문자열로 변경</span></span>
-<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.replace(<span class="st">","</span>, <span class="st">""</span>)  <span class="co"># 천 단위 구분자 제거 (예: "1,234" → "1234")</span></span>
-<span id="cb12-166"><a href="#cb12-166" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.strip()           <span class="co"># 앞뒤 공백 제거</span></span>
-<span id="cb12-167"><a href="#cb12-167" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">"nan"</span>, <span class="st">"0"</span>)   <span class="co"># 'nan' 문자열을 "0"으로 변경</span></span>
-<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">""</span>, <span class="st">"0"</span>)      <span class="co"># 빈 문자열을 "0"으로 변경</span></span>
-<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">int</span>)           <span class="co"># 최종적으로 정수형으로 변환</span></span>
-<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 7. 결과 반환</span></span>
-<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"최종 데이터 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"전처리 완료!"</span>)</span>
-<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_filtered</span>
-<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a><span class="co"># 사용 예시</span></span>
-<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
-<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a><span class="co"># blob_url = "https://github.com/~~/korean-elections/blob/main/original/Presidential_Elections/15th_1997/제15대 대통령선거 개표자료.xls"</span></span>
-<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election(blob_url)</span></span>
-<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a><span class="co"># 로컬에서 불러오는 경우</span></span>
-<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election("./data/15대_대선결과.xls")</span></span>
-<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a><span class="co"># 업로드된 파일 사용하는 경우</span></span>
-<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election("제15대 대통령선거 개표자료.xls")</span></span>
-<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a><span class="co"># 결과 확인</span></span>
-<span id="cb12-196"><a href="#cb12-196" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_15th.head())</span></span>
-<span id="cb12-197"><a href="#cb12-197" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_15th.columns.tolist())</span></span>
-<span id="cb12-198"><a href="#cb12-198" aria-hidden="true" tabindex="-1"></a><span class="co"># print("합계 행 개수:", df_15th[df_15th.iloc[:, 1].astype(str).str.contains("합계", na=False)].shape[0])</span></span>
-<span id="cb12-199"><a href="#cb12-199" aria-hidden="true" tabindex="-1"></a><span class="co"># print("소계 행 개수:", df_15th[df_15th.iloc[:, 2].astype(str).str.contains("소계", na=False)].shape[0])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-13" class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 15대 대통령선거 데이터 전처리 함수</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_github_url_to_raw(github_url):</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co">    깃허브 blob URL을 raw URL로 변환</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co">    github_url : 깃허브 파일 URL</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co">    raw URL (pandas가 직접 읽을 수 있는 형태)</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/file.xls"</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="co">    raw_url = convert_github_url_to_raw(blob_url)</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="co">    # "https://github.com/user/repo/raw/main/file.xls"</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'/blob/'</span> <span class="kw">in</span> github_url:</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> github_url.replace(<span class="st">'/blob/'</span>, <span class="st">'/raw/'</span>)</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> github_url</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_15th_presidential_election(file_path):</span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="co">    15대 대통령선거 데이터 전처리 함수</span></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a><span class="co">    엑셀 파일 구조:</span></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="co">    - 0행: 헤더 첫 번째 줄</span></span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1행: 헤더 두 번째 줄</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a><span class="co">    - 2행: 헤더 세 번째 줄</span></span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a><span class="co">    - 3행: 헤더 네 번째 줄</span></span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a><span class="co">    - 4행부터: 실제 데이터</span></span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="co">    특별한 필터링 조건:</span></span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a><span class="co">    - 구시군명에 "합계" 포함</span></span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a><span class="co">    - 읍면동명에 "소계" 포함</span></span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a><span class="co">    file_path : 파일 경로 (로컬 파일, 깃허브 blob URL, 또는 raw URL)</span></span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a><span class="co">        - 로컬: "./data/15대_선거결과.xls"</span></span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 blob: "https://github.com/user/repo/blob/main/파일.xls" (자동 변환됨)</span></span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 raw: "https://github.com/user/repo/raw/main/파일.xls"</span></span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a><span class="co">    전처리된 선거 데이터 (pandas DataFrame, 합계 및 소계 행만 포함)</span></span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a><span class="co">    # 깃허브에서 불러오기 (blob URL 그대로 사용 - 자동 변환됨)</span></span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/15대/선거결과.xls"</span></span>
+<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_15th_presidential_election(blob_url)</span></span>
+<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a><span class="co">    # 로컬 파일 불러오기</span></span>
+<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_15th_presidential_election("./data/15대_선거결과.xls")</span></span>
+<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. 파일 로드 (자동 감지)</span></span>
+<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> file_path.startswith((<span class="st">'http://'</span>, <span class="st">'https://'</span>)):</span>
+<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a>        <span class="co"># URL인 경우 - blob URL이면 raw URL로 변환</span></span>
+<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a>        raw_url <span class="op">=</span> convert_github_url_to_raw(file_path)</span>
+<span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"웹에서 파일 로드: </span><span class="sc">{</span>raw_url<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> raw_url <span class="op">!=</span> file_path:</span>
+<span id="cb13-74"><a href="#cb13-74" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  (blob URL을 raw URL로 자동 변환)"</span>)</span>
+<span id="cb13-75"><a href="#cb13-75" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(raw_url, header<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb13-76"><a href="#cb13-76" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb13-77"><a href="#cb13-77" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 로컬 파일인 경우</span></span>
+<span id="cb13-78"><a href="#cb13-78" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"로컬에서 파일 로드: </span><span class="sc">{</span>file_path<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-79"><a href="#cb13-79" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(file_path, header<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb13-80"><a href="#cb13-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-81"><a href="#cb13-81" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"원본 데이터 크기: </span><span class="sc">{</span>df_all<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-82"><a href="#cb13-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-83"><a href="#cb13-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-84"><a href="#cb13-84" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. 복합 헤더 구성 (0~3행 병합)</span></span>
+<span id="cb13-85"><a href="#cb13-85" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-86"><a href="#cb13-86" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 파이썬 인덱스는 0부터 시작하므로:</span></span>
+<span id="cb13-87"><a href="#cb13-87" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 0행 = iloc[0] (실제 1번째 행)</span></span>
+<span id="cb13-88"><a href="#cb13-88" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1행 = iloc[1] (실제 2번째 행)</span></span>
+<span id="cb13-89"><a href="#cb13-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2행 = iloc[2] (실제 3번째 행)</span></span>
+<span id="cb13-90"><a href="#cb13-90" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3행 = iloc[3] (실제 4번째 행)</span></span>
+<span id="cb13-91"><a href="#cb13-91" aria-hidden="true" tabindex="-1"></a>    header_row_1 <span class="op">=</span> df_all.iloc[<span class="dv">0</span>].fillna(<span class="st">""</span>)  <span class="co"># 첫 번째 헤더 행</span></span>
+<span id="cb13-92"><a href="#cb13-92" aria-hidden="true" tabindex="-1"></a>    header_row_2 <span class="op">=</span> df_all.iloc[<span class="dv">1</span>].fillna(<span class="st">""</span>)  <span class="co"># 두 번째 헤더 행</span></span>
+<span id="cb13-93"><a href="#cb13-93" aria-hidden="true" tabindex="-1"></a>    header_row_3 <span class="op">=</span> df_all.iloc[<span class="dv">2</span>].fillna(<span class="st">""</span>)  <span class="co"># 세 번째 헤더 행</span></span>
+<span id="cb13-94"><a href="#cb13-94" aria-hidden="true" tabindex="-1"></a>    header_row_4 <span class="op">=</span> df_all.iloc[<span class="dv">3</span>].fillna(<span class="st">""</span>)  <span class="co"># 네 번째 헤더 행</span></span>
+<span id="cb13-95"><a href="#cb13-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-96"><a href="#cb13-96" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4개 헤더 행을 "_"로 연결하여 통합 헤더 생성</span></span>
+<span id="cb13-97"><a href="#cb13-97" aria-hidden="true" tabindex="-1"></a>    combined_headers <span class="op">=</span> (</span>
+<span id="cb13-98"><a href="#cb13-98" aria-hidden="true" tabindex="-1"></a>        header_row_1.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb13-99"><a href="#cb13-99" aria-hidden="true" tabindex="-1"></a>        header_row_2.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb13-100"><a href="#cb13-100" aria-hidden="true" tabindex="-1"></a>        header_row_3.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb13-101"><a href="#cb13-101" aria-hidden="true" tabindex="-1"></a>        header_row_4.astype(<span class="bu">str</span>)</span>
+<span id="cb13-102"><a href="#cb13-102" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb13-103"><a href="#cb13-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-104"><a href="#cb13-104" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"4개 헤더 행 병합 완료"</span>)</span>
+<span id="cb13-105"><a href="#cb13-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-106"><a href="#cb13-106" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-107"><a href="#cb13-107" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. 실제 데이터 추출 (4행부터)</span></span>
+<span id="cb13-108"><a href="#cb13-108" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-109"><a href="#cb13-109" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4행 = iloc[4] (실제 5번째 행)부터 데이터 시작</span></span>
+<span id="cb13-110"><a href="#cb13-110" aria-hidden="true" tabindex="-1"></a>    df_data <span class="op">=</span> df_all.iloc[<span class="dv">4</span>:].copy()</span>
+<span id="cb13-111"><a href="#cb13-111" aria-hidden="true" tabindex="-1"></a>    df_data.columns <span class="op">=</span> combined_headers</span>
+<span id="cb13-112"><a href="#cb13-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-113"><a href="#cb13-113" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"데이터 추출 후 크기: </span><span class="sc">{</span>df_data<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-114"><a href="#cb13-114" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"컬럼 수: </span><span class="sc">{</span><span class="bu">len</span>(df_data.columns)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-115"><a href="#cb13-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-116"><a href="#cb13-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-117"><a href="#cb13-117" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. 주요 컬럼 추출</span></span>
+<span id="cb13-118"><a href="#cb13-118" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-119"><a href="#cb13-119" aria-hidden="true" tabindex="-1"></a>    gugun_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"구시군명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
+<span id="cb13-120"><a href="#cb13-120" aria-hidden="true" tabindex="-1"></a>    dong_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"읍면동명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
+<span id="cb13-121"><a href="#cb13-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-122"><a href="#cb13-122" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"주요 컬럼:"</span>)</span>
+<span id="cb13-123"><a href="#cb13-123" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 구시군: </span><span class="sc">{</span>gugun_column<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-124"><a href="#cb13-124" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 읍면동: </span><span class="sc">{</span>dong_column<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-125"><a href="#cb13-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-126"><a href="#cb13-126" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-127"><a href="#cb13-127" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 5. 합계 및 소계 행 필터링</span></span>
+<span id="cb13-128"><a href="#cb13-128" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-129"><a href="#cb13-129" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 15대 특별 조건:</span></span>
+<span id="cb13-130"><a href="#cb13-130" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 구시군명에 "합계" 포함</span></span>
+<span id="cb13-131"><a href="#cb13-131" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 읍면동명에 "소계" 포함</span></span>
+<span id="cb13-132"><a href="#cb13-132" aria-hidden="true" tabindex="-1"></a>    filter_mask <span class="op">=</span> (</span>
+<span id="cb13-133"><a href="#cb13-133" aria-hidden="true" tabindex="-1"></a>        df_data[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>) <span class="op">|</span></span>
+<span id="cb13-134"><a href="#cb13-134" aria-hidden="true" tabindex="-1"></a>        df_data[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb13-135"><a href="#cb13-135" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb13-136"><a href="#cb13-136" aria-hidden="true" tabindex="-1"></a>    df_filtered <span class="op">=</span> df_data[filter_mask].copy()</span>
+<span id="cb13-137"><a href="#cb13-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-138"><a href="#cb13-138" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"필터링 후 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-139"><a href="#cb13-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-140"><a href="#cb13-140" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 필터링 결과 상세 정보</span></span>
+<span id="cb13-141"><a href="#cb13-141" aria-hidden="true" tabindex="-1"></a>    total_rows <span class="op">=</span> df_filtered[</span>
+<span id="cb13-142"><a href="#cb13-142" aria-hidden="true" tabindex="-1"></a>        df_filtered[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb13-143"><a href="#cb13-143" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
+<span id="cb13-144"><a href="#cb13-144" aria-hidden="true" tabindex="-1"></a>    subtotal_rows <span class="op">=</span> df_filtered[</span>
+<span id="cb13-145"><a href="#cb13-145" aria-hidden="true" tabindex="-1"></a>        df_filtered[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb13-146"><a href="#cb13-146" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
+<span id="cb13-147"><a href="#cb13-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-148"><a href="#cb13-148" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 합계 행: </span><span class="sc">{</span>total_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
+<span id="cb13-149"><a href="#cb13-149" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 소계 행: </span><span class="sc">{</span>subtotal_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
+<span id="cb13-150"><a href="#cb13-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-151"><a href="#cb13-151" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-152"><a href="#cb13-152" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 6. 수치형 컬럼 정리</span></span>
+<span id="cb13-153"><a href="#cb13-153" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-154"><a href="#cb13-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3번째 컬럼(인덱스 3)부터는 보통 득표수 등 수치 데이터</span></span>
+<span id="cb13-155"><a href="#cb13-155" aria-hidden="true" tabindex="-1"></a>    numeric_columns <span class="op">=</span> df_filtered.columns[<span class="dv">3</span>:]</span>
+<span id="cb13-156"><a href="#cb13-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-157"><a href="#cb13-157" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"수치형 컬럼 개수: </span><span class="sc">{</span><span class="bu">len</span>(numeric_columns)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-158"><a href="#cb13-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-159"><a href="#cb13-159" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> numeric_columns:</span>
+<span id="cb13-160"><a href="#cb13-160" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 쉼표 제거 → 공백 제거 → 빈값을 0으로 → 정수형 변환</span></span>
+<span id="cb13-161"><a href="#cb13-161" aria-hidden="true" tabindex="-1"></a>        df_filtered[col] <span class="op">=</span> (</span>
+<span id="cb13-162"><a href="#cb13-162" aria-hidden="true" tabindex="-1"></a>            df_filtered[col]</span>
+<span id="cb13-163"><a href="#cb13-163" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">str</span>)           <span class="co"># 문자열로 변환</span></span>
+<span id="cb13-164"><a href="#cb13-164" aria-hidden="true" tabindex="-1"></a>            .fillna(<span class="st">"0"</span>)           <span class="co"># NaN 값을 "0" 문자열로 변경</span></span>
+<span id="cb13-165"><a href="#cb13-165" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.replace(<span class="st">","</span>, <span class="st">""</span>)  <span class="co"># 천 단위 구분자 제거 (예: "1,234" → "1234")</span></span>
+<span id="cb13-166"><a href="#cb13-166" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.strip()           <span class="co"># 앞뒤 공백 제거</span></span>
+<span id="cb13-167"><a href="#cb13-167" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">"nan"</span>, <span class="st">"0"</span>)   <span class="co"># 'nan' 문자열을 "0"으로 변경</span></span>
+<span id="cb13-168"><a href="#cb13-168" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">""</span>, <span class="st">"0"</span>)      <span class="co"># 빈 문자열을 "0"으로 변경</span></span>
+<span id="cb13-169"><a href="#cb13-169" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">int</span>)           <span class="co"># 최종적으로 정수형으로 변환</span></span>
+<span id="cb13-170"><a href="#cb13-170" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb13-171"><a href="#cb13-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-172"><a href="#cb13-172" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-173"><a href="#cb13-173" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 7. 결과 반환</span></span>
+<span id="cb13-174"><a href="#cb13-174" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb13-175"><a href="#cb13-175" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"최종 데이터 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-176"><a href="#cb13-176" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"전처리 완료!"</span>)</span>
+<span id="cb13-177"><a href="#cb13-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-178"><a href="#cb13-178" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_filtered</span>
+<span id="cb13-179"><a href="#cb13-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-180"><a href="#cb13-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-181"><a href="#cb13-181" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb13-182"><a href="#cb13-182" aria-hidden="true" tabindex="-1"></a><span class="co"># 사용 예시</span></span>
+<span id="cb13-183"><a href="#cb13-183" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb13-184"><a href="#cb13-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-185"><a href="#cb13-185" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
+<span id="cb13-186"><a href="#cb13-186" aria-hidden="true" tabindex="-1"></a><span class="co"># blob_url = "https://github.com/~~/korean-elections/blob/main/original/Presidential_Elections/15th_1997/제15대 대통령선거 개표자료.xls"</span></span>
+<span id="cb13-187"><a href="#cb13-187" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election(blob_url)</span></span>
+<span id="cb13-188"><a href="#cb13-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-189"><a href="#cb13-189" aria-hidden="true" tabindex="-1"></a><span class="co"># 로컬에서 불러오는 경우</span></span>
+<span id="cb13-190"><a href="#cb13-190" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election("./data/15대_대선결과.xls")</span></span>
+<span id="cb13-191"><a href="#cb13-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a><span class="co"># 업로드된 파일 사용하는 경우</span></span>
+<span id="cb13-193"><a href="#cb13-193" aria-hidden="true" tabindex="-1"></a><span class="co"># df_15th = process_15th_presidential_election("제15대 대통령선거 개표자료.xls")</span></span>
+<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-195"><a href="#cb13-195" aria-hidden="true" tabindex="-1"></a><span class="co"># 결과 확인</span></span>
+<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_15th.head())</span></span>
+<span id="cb13-197"><a href="#cb13-197" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_15th.columns.tolist())</span></span>
+<span id="cb13-198"><a href="#cb13-198" aria-hidden="true" tabindex="-1"></a><span class="co"># print("합계 행 개수:", df_15th[df_15th.iloc[:, 1].astype(str).str.contains("합계", na=False)].shape[0])</span></span>
+<span id="cb13-199"><a href="#cb13-199" aria-hidden="true" tabindex="-1"></a><span class="co"># print("소계 행 개수:", df_15th[df_15th.iloc[:, 2].astype(str).str.contains("소계", na=False)].shape[0])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-13" class="cell" data-outputid="56666205-1a28-49bd-c8c8-c8116082d1c5" data-execution_count="54">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>blob_url15 <span class="op">=</span> <span class="st">"https://github.com/sw1kwon/korean-elections/blob/main/original/Presidential_Elections/15th_1997/</span><span class="sc">%E</span><span class="st">C%A0%9C15</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">20</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">ED</span><span class="sc">%86%</span><span class="st">B5</span><span class="sc">%E</span><span class="st">B%A0%B9</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%84%</span><span class="st">A0</span><span class="sc">%E</span><span class="st">A%B1%B0</span><span class="sc">%20%</span><span class="st">EA%B0%9C</span><span class="sc">%E</span><span class="st">D</span><span class="sc">%91%</span><span class="st">9C</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%9E%90%</span><span class="st">EB%A3%8C.xls"</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df_15th <span class="op">=</span> process_15th_presidential_election(blob_url15)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-14" class="cell" data-outputid="56666205-1a28-49bd-c8c8-c8116082d1c5" data-execution_count="54">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>blob_url15 <span class="op">=</span> <span class="st">"https://github.com/sw1kwon/korean-elections/blob/main/original/Presidential_Elections/15th_1997/</span><span class="sc">%E</span><span class="st">C%A0%9C15</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">20</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">ED</span><span class="sc">%86%</span><span class="st">B5</span><span class="sc">%E</span><span class="st">B%A0%B9</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%84%</span><span class="st">A0</span><span class="sc">%E</span><span class="st">A%B1%B0</span><span class="sc">%20%</span><span class="st">EA%B0%9C</span><span class="sc">%E</span><span class="st">D</span><span class="sc">%91%</span><span class="st">9C</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%9E%90%</span><span class="st">EB%A3%8C.xls"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df_15th <span class="op">=</span> process_15th_presidential_election(blob_url15)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>웹에서 파일 로드: https://github.com/sw1kwon/korean-elections/raw/main/original/Presidential_Elections/15th_1997/%EC%A0%9C15%EB%8C%80%20%EB%8C%80%ED%86%B5%EB%A0%B9%EC%84%A0%EA%B1%B0%20%EA%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.xls
   (blob URL을 raw URL로 자동 변환)
@@ -2122,8 +2136,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 전처리 완료!</code></pre>
 </div>
 </div>
-<div id="cell-14" class="cell" data-outputid="8a6cfa72-dc02-4215-ab54-b20a2e58d693" data-execution_count="55">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df_15th</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-15" class="cell" data-outputid="8a6cfa72-dc02-4215-ab54-b20a2e58d693" data-execution_count="55">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df_15th</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="55">
 
   <div id="df-93906299-79fe-4623-84ad-b76a8da0f0b9" class="colab-df-container">
@@ -2637,8 +2651,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-15" class="cell" data-outputid="8aeb9150-7500-4b18-dd99-5d546caf17d7" data-execution_count="56">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df_15th.columns.tolist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-16" class="cell" data-outputid="8aeb9150-7500-4b18-dd99-5d546caf17d7" data-execution_count="56">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_15th.columns.tolist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="56">
 <pre><code>['시도명___',
  '구시군명___',
@@ -2659,26 +2673,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  '기권수___']</code></pre>
 </div>
 </div>
-<div id="cell-16" class="cell" data-execution_count="57">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>rename_dict15 <span class="op">=</span> {</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'시도명___'</span>: <span class="st">'시도'</span>,</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'구시군명___'</span>: <span class="st">'구시군'</span>,</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'선거인수___'</span>: <span class="st">'선거인수'</span>,</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'투표자수___'</span>: <span class="st">'투표수'</span>,</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'유효투표수_후보자별 득표수_한나라당_이회창'</span>: <span class="st">'득표수_1_한나라당_이회창'</span>,</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민회의_김대중'</span>: <span class="st">'득표수_2_새정치국민회의_김대중'</span>,</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민신당_이인제'</span>: <span class="st">'득표수_3_국민신당_이인제'</span>,</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민승리21_권영길'</span>: <span class="st">'득표수_4_건설국민승리21_권영길'</span>,</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__공화당_허경영'</span>: <span class="st">'득표수_5_공화당_허경영'</span>,</span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__바른정치聯_김한식'</span>: <span class="st">'득표수_6_바른나라정치연합_김한식'</span>,</span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__한국당_신정일'</span>: <span class="st">'득표수_7_통일한국당_신정일'</span>,</span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'_계__'</span>: <span class="st">'득표수_계'</span>,</span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무표투표수___'</span>: <span class="st">'무효투표수'</span>,</span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'기권수___'</span>: <span class="st">'기권수'</span></span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-17" class="cell" data-execution_count="57">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>rename_dict15 <span class="op">=</span> {</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'시도명___'</span>: <span class="st">'시도'</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'구시군명___'</span>: <span class="st">'구시군'</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'선거인수___'</span>: <span class="st">'선거인수'</span>,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'투표자수___'</span>: <span class="st">'투표수'</span>,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'유효투표수_후보자별 득표수_한나라당_이회창'</span>: <span class="st">'득표수_1_한나라당_이회창'</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민회의_김대중'</span>: <span class="st">'득표수_2_새정치국민회의_김대중'</span>,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민신당_이인제'</span>: <span class="st">'득표수_3_국민신당_이인제'</span>,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민승리21_권영길'</span>: <span class="st">'득표수_4_건설국민승리21_권영길'</span>,</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__공화당_허경영'</span>: <span class="st">'득표수_5_공화당_허경영'</span>,</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__바른정치聯_김한식'</span>: <span class="st">'득표수_6_바른나라정치연합_김한식'</span>,</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__한국당_신정일'</span>: <span class="st">'득표수_7_통일한국당_신정일'</span>,</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'_계__'</span>: <span class="st">'득표수_계'</span>,</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무표투표수___'</span>: <span class="st">'무효투표수'</span>,</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'기권수___'</span>: <span class="st">'기권수'</span></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-17" class="cell" data-outputid="ef510d2c-7839-414f-c7d0-6b9c3130b137" data-execution_count="58">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df_15th.rename(columns<span class="op">=</span>rename_dict15).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-18" class="cell" data-outputid="ef510d2c-7839-414f-c7d0-6b9c3130b137" data-execution_count="58">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df_15th.rename(columns<span class="op">=</span>rename_dict15).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="58">
 
   <div id="df-6541322a-85ef-4690-ab1d-930422450a90" class="colab-df-container">
@@ -3104,19 +3118,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-18" class="cell" data-execution_count="59">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df_15th <span class="op">=</span> df_15th.rename(columns<span class="op">=</span>rename_dict15).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-19" class="cell" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_15th <span class="op">=</span> df_15th.rename(columns<span class="op">=</span>rename_dict15).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-19" class="cell" data-execution_count="60">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 구시군 원소 괄호 제거</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df_15th[<span class="st">'구시군'</span>] <span class="op">=</span> (</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    df_15th[<span class="st">'구시군'</span>]</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.replace(<span class="vs">r"\(.*\)"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.strip()</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-20" class="cell" data-execution_count="60">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 구시군 원소 괄호 제거</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>df_15th[<span class="st">'구시군'</span>] <span class="op">=</span> (</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    df_15th[<span class="st">'구시군'</span>]</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.replace(<span class="vs">r"\(.*\)"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.strip()</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-20" class="cell" data-outputid="cffddbc1-e119-4fd0-e2ad-294ad747c37d" data-execution_count="61">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_15th[df_15th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-21" class="cell" data-outputid="cffddbc1-e119-4fd0-e2ad-294ad747c37d" data-execution_count="61">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df_15th[df_15th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="61">
 
   <div id="df-cd4d5817-99a7-4df8-bc03-6904c49f36dc" class="colab-df-container">
@@ -3643,217 +3657,217 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-21" class="cell" data-execution_count="62">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df_15th.to_csv(<span class="st">"temp1_president_15.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-22" class="cell" data-execution_count="62">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>df_15th.to_csv(<span class="st">"temp1_president_15.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="th_1992" class="level1">
 <h1>14th_1992</h1>
-<div id="cell-23" class="cell" data-execution_count="63">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 14대 대통령선거 데이터 전처리 함수</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_github_url_to_raw(github_url):</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="co">    깃허브 blob URL을 raw URL로 변환</span></span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="co">    github_url : 깃허브 파일 URL</span></span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="co">    raw URL (pandas가 직접 읽을 수 있는 형태)</span></span>
-<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
-<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/file.xls"</span></span>
-<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a><span class="co">    raw_url = convert_github_url_to_raw(blob_url)</span></span>
-<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="co">    # "https://github.com/user/repo/raw/main/file.xls"</span></span>
-<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'/blob/'</span> <span class="kw">in</span> github_url:</span>
-<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> github_url.replace(<span class="st">'/blob/'</span>, <span class="st">'/raw/'</span>)</span>
-<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> github_url</span>
-<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_14th_presidential_election(file_path):</span>
-<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a><span class="co">    14대 대통령선거 데이터 전처리 함수</span></span>
-<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a><span class="co">    엑셀 파일 구조:</span></span>
-<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a><span class="co">    - 0행: 헤더 첫 번째 줄</span></span>
-<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1행: 헤더 두 번째 줄</span></span>
-<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a><span class="co">    - 2행: 헤더 세 번째 줄</span></span>
-<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a><span class="co">    - 3행: 헤더 네 번째 줄</span></span>
-<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a><span class="co">    - 4행부터: 실제 데이터</span></span>
-<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a><span class="co">    특별한 필터링 조건:</span></span>
-<span id="cb24-42"><a href="#cb24-42" aria-hidden="true" tabindex="-1"></a><span class="co">    - 구시군명에 "합계" 포함</span></span>
-<span id="cb24-43"><a href="#cb24-43" aria-hidden="true" tabindex="-1"></a><span class="co">    - 읍면동명에 "소계" 포함</span></span>
-<span id="cb24-44"><a href="#cb24-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-45"><a href="#cb24-45" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb24-46"><a href="#cb24-46" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb24-47"><a href="#cb24-47" aria-hidden="true" tabindex="-1"></a><span class="co">    file_path : 파일 경로 (로컬 파일, 깃허브 blob URL, 또는 raw URL)</span></span>
-<span id="cb24-48"><a href="#cb24-48" aria-hidden="true" tabindex="-1"></a><span class="co">        - 로컬: "./data/14대_선거결과.xls"</span></span>
-<span id="cb24-49"><a href="#cb24-49" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 blob: "https://github.com/user/repo/blob/main/파일.xls" (자동 변환됨)</span></span>
-<span id="cb24-50"><a href="#cb24-50" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 raw: "https://github.com/user/repo/raw/main/파일.xls"</span></span>
-<span id="cb24-51"><a href="#cb24-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-52"><a href="#cb24-52" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb24-53"><a href="#cb24-53" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a><span class="co">    전처리된 선거 데이터 (pandas DataFrame, 합계 및 소계 행만 포함)</span></span>
-<span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
-<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a><span class="co">    # 깃허브에서 불러오기 (blob URL 그대로 사용 - 자동 변환됨)</span></span>
-<span id="cb24-59"><a href="#cb24-59" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/14대/선거결과.xls"</span></span>
-<span id="cb24-60"><a href="#cb24-60" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_14th_presidential_election(blob_url)</span></span>
-<span id="cb24-61"><a href="#cb24-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-62"><a href="#cb24-62" aria-hidden="true" tabindex="-1"></a><span class="co">    # 로컬 파일 불러오기</span></span>
-<span id="cb24-63"><a href="#cb24-63" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_14th_presidential_election("./data/14대_선거결과.xls")</span></span>
-<span id="cb24-64"><a href="#cb24-64" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb24-65"><a href="#cb24-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-66"><a href="#cb24-66" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-67"><a href="#cb24-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. 파일 로드 (자동 감지)</span></span>
-<span id="cb24-68"><a href="#cb24-68" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-69"><a href="#cb24-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> file_path.startswith((<span class="st">'http://'</span>, <span class="st">'https://'</span>)):</span>
-<span id="cb24-70"><a href="#cb24-70" aria-hidden="true" tabindex="-1"></a>        <span class="co"># URL인 경우 - blob URL이면 raw URL로 변환</span></span>
-<span id="cb24-71"><a href="#cb24-71" aria-hidden="true" tabindex="-1"></a>        raw_url <span class="op">=</span> convert_github_url_to_raw(file_path)</span>
-<span id="cb24-72"><a href="#cb24-72" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"웹에서 파일 로드: </span><span class="sc">{</span>raw_url<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-73"><a href="#cb24-73" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> raw_url <span class="op">!=</span> file_path:</span>
-<span id="cb24-74"><a href="#cb24-74" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  (blob URL을 raw URL로 자동 변환)"</span>)</span>
-<span id="cb24-75"><a href="#cb24-75" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(raw_url, header<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb24-76"><a href="#cb24-76" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb24-77"><a href="#cb24-77" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 로컬 파일인 경우</span></span>
-<span id="cb24-78"><a href="#cb24-78" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"로컬에서 파일 로드: </span><span class="sc">{</span>file_path<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-79"><a href="#cb24-79" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(file_path, header<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb24-80"><a href="#cb24-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-81"><a href="#cb24-81" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"원본 데이터 크기: </span><span class="sc">{</span>df_all<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-82"><a href="#cb24-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-84"><a href="#cb24-84" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. 복합 헤더 구성 (0~3행 병합)</span></span>
-<span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 파이썬 인덱스는 0부터 시작하므로:</span></span>
-<span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 0행 = iloc[0] (실제 1번째 행)</span></span>
-<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1행 = iloc[1] (실제 2번째 행)</span></span>
-<span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2행 = iloc[2] (실제 3번째 행)</span></span>
-<span id="cb24-90"><a href="#cb24-90" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3행 = iloc[3] (실제 4번째 행)</span></span>
-<span id="cb24-91"><a href="#cb24-91" aria-hidden="true" tabindex="-1"></a>    header_row_1 <span class="op">=</span> df_all.iloc[<span class="dv">0</span>].fillna(<span class="st">""</span>)  <span class="co"># 첫 번째 헤더 행</span></span>
-<span id="cb24-92"><a href="#cb24-92" aria-hidden="true" tabindex="-1"></a>    header_row_2 <span class="op">=</span> df_all.iloc[<span class="dv">1</span>].fillna(<span class="st">""</span>)  <span class="co"># 두 번째 헤더 행</span></span>
-<span id="cb24-93"><a href="#cb24-93" aria-hidden="true" tabindex="-1"></a>    header_row_3 <span class="op">=</span> df_all.iloc[<span class="dv">2</span>].fillna(<span class="st">""</span>)  <span class="co"># 세 번째 헤더 행</span></span>
-<span id="cb24-94"><a href="#cb24-94" aria-hidden="true" tabindex="-1"></a>    header_row_4 <span class="op">=</span> df_all.iloc[<span class="dv">3</span>].fillna(<span class="st">""</span>)  <span class="co"># 네 번째 헤더 행</span></span>
-<span id="cb24-95"><a href="#cb24-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-96"><a href="#cb24-96" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4개 헤더 행을 "_"로 연결하여 통합 헤더 생성</span></span>
-<span id="cb24-97"><a href="#cb24-97" aria-hidden="true" tabindex="-1"></a>    combined_headers <span class="op">=</span> (</span>
-<span id="cb24-98"><a href="#cb24-98" aria-hidden="true" tabindex="-1"></a>        header_row_1.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb24-99"><a href="#cb24-99" aria-hidden="true" tabindex="-1"></a>        header_row_2.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb24-100"><a href="#cb24-100" aria-hidden="true" tabindex="-1"></a>        header_row_3.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
-<span id="cb24-101"><a href="#cb24-101" aria-hidden="true" tabindex="-1"></a>        header_row_4.astype(<span class="bu">str</span>)</span>
-<span id="cb24-102"><a href="#cb24-102" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb24-103"><a href="#cb24-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-104"><a href="#cb24-104" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"4개 헤더 행 병합 완료"</span>)</span>
-<span id="cb24-105"><a href="#cb24-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-106"><a href="#cb24-106" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-107"><a href="#cb24-107" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. 실제 데이터 추출 (4행부터)</span></span>
-<span id="cb24-108"><a href="#cb24-108" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-109"><a href="#cb24-109" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4행 = iloc[4] (실제 5번째 행)부터 데이터 시작</span></span>
-<span id="cb24-110"><a href="#cb24-110" aria-hidden="true" tabindex="-1"></a>    df_data <span class="op">=</span> df_all.iloc[<span class="dv">4</span>:].copy()</span>
-<span id="cb24-111"><a href="#cb24-111" aria-hidden="true" tabindex="-1"></a>    df_data.columns <span class="op">=</span> combined_headers</span>
-<span id="cb24-112"><a href="#cb24-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-113"><a href="#cb24-113" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"데이터 추출 후 크기: </span><span class="sc">{</span>df_data<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-114"><a href="#cb24-114" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"컬럼 수: </span><span class="sc">{</span><span class="bu">len</span>(df_data.columns)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-115"><a href="#cb24-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-116"><a href="#cb24-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-117"><a href="#cb24-117" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. 주요 컬럼 추출</span></span>
-<span id="cb24-118"><a href="#cb24-118" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-119"><a href="#cb24-119" aria-hidden="true" tabindex="-1"></a>    gugun_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"구시군명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
-<span id="cb24-120"><a href="#cb24-120" aria-hidden="true" tabindex="-1"></a>    dong_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"읍면동명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
-<span id="cb24-121"><a href="#cb24-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-122"><a href="#cb24-122" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"주요 컬럼:"</span>)</span>
-<span id="cb24-123"><a href="#cb24-123" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 구시군: </span><span class="sc">{</span>gugun_column<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-124"><a href="#cb24-124" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 읍면동: </span><span class="sc">{</span>dong_column<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-125"><a href="#cb24-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-126"><a href="#cb24-126" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-127"><a href="#cb24-127" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 5. 합계 및 소계 행 필터링</span></span>
-<span id="cb24-128"><a href="#cb24-128" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-129"><a href="#cb24-129" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 14대 특별 조건:</span></span>
-<span id="cb24-130"><a href="#cb24-130" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 구시군명에 "합계" 포함</span></span>
-<span id="cb24-131"><a href="#cb24-131" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 읍면동명에 "소계" 포함</span></span>
-<span id="cb24-132"><a href="#cb24-132" aria-hidden="true" tabindex="-1"></a>    filter_mask <span class="op">=</span> (</span>
-<span id="cb24-133"><a href="#cb24-133" aria-hidden="true" tabindex="-1"></a>        df_data[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>) <span class="op">|</span></span>
-<span id="cb24-134"><a href="#cb24-134" aria-hidden="true" tabindex="-1"></a>        df_data[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb24-135"><a href="#cb24-135" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb24-136"><a href="#cb24-136" aria-hidden="true" tabindex="-1"></a>    df_filtered <span class="op">=</span> df_data[filter_mask].copy()</span>
-<span id="cb24-137"><a href="#cb24-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-138"><a href="#cb24-138" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"필터링 후 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-139"><a href="#cb24-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-140"><a href="#cb24-140" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 필터링 결과 상세 정보</span></span>
-<span id="cb24-141"><a href="#cb24-141" aria-hidden="true" tabindex="-1"></a>    total_rows <span class="op">=</span> df_filtered[</span>
-<span id="cb24-142"><a href="#cb24-142" aria-hidden="true" tabindex="-1"></a>        df_filtered[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb24-143"><a href="#cb24-143" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
-<span id="cb24-144"><a href="#cb24-144" aria-hidden="true" tabindex="-1"></a>    subtotal_rows <span class="op">=</span> df_filtered[</span>
-<span id="cb24-145"><a href="#cb24-145" aria-hidden="true" tabindex="-1"></a>        df_filtered[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb24-146"><a href="#cb24-146" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
-<span id="cb24-147"><a href="#cb24-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-148"><a href="#cb24-148" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 합계 행: </span><span class="sc">{</span>total_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
-<span id="cb24-149"><a href="#cb24-149" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 소계 행: </span><span class="sc">{</span>subtotal_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
-<span id="cb24-150"><a href="#cb24-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-151"><a href="#cb24-151" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-152"><a href="#cb24-152" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 6. 수치형 컬럼 정리</span></span>
-<span id="cb24-153"><a href="#cb24-153" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-154"><a href="#cb24-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3번째 컬럼(인덱스 3)부터는 보통 득표수 등 수치 데이터</span></span>
-<span id="cb24-155"><a href="#cb24-155" aria-hidden="true" tabindex="-1"></a>    numeric_columns <span class="op">=</span> df_filtered.columns[<span class="dv">3</span>:]</span>
-<span id="cb24-156"><a href="#cb24-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-157"><a href="#cb24-157" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"수치형 컬럼 개수: </span><span class="sc">{</span><span class="bu">len</span>(numeric_columns)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-158"><a href="#cb24-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-159"><a href="#cb24-159" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> numeric_columns:</span>
-<span id="cb24-160"><a href="#cb24-160" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 쉼표 제거 → 공백 제거 → 빈값을 0으로 → 정수형 변환</span></span>
-<span id="cb24-161"><a href="#cb24-161" aria-hidden="true" tabindex="-1"></a>        df_filtered[col] <span class="op">=</span> (</span>
-<span id="cb24-162"><a href="#cb24-162" aria-hidden="true" tabindex="-1"></a>            df_filtered[col]</span>
-<span id="cb24-163"><a href="#cb24-163" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">str</span>)           <span class="co"># 문자열로 변환</span></span>
-<span id="cb24-164"><a href="#cb24-164" aria-hidden="true" tabindex="-1"></a>            .fillna(<span class="st">"0"</span>)           <span class="co"># NaN 값을 "0" 문자열로 변경</span></span>
-<span id="cb24-165"><a href="#cb24-165" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.replace(<span class="st">","</span>, <span class="st">""</span>)  <span class="co"># 천 단위 구분자 제거 (예: "1,234" → "1234")</span></span>
-<span id="cb24-166"><a href="#cb24-166" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.strip()           <span class="co"># 앞뒤 공백 제거</span></span>
-<span id="cb24-167"><a href="#cb24-167" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">"nan"</span>, <span class="st">"0"</span>)   <span class="co"># 'nan' 문자열을 "0"으로 변경</span></span>
-<span id="cb24-168"><a href="#cb24-168" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">""</span>, <span class="st">"0"</span>)      <span class="co"># 빈 문자열을 "0"으로 변경</span></span>
-<span id="cb24-169"><a href="#cb24-169" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">int</span>)           <span class="co"># 최종적으로 정수형으로 변환</span></span>
-<span id="cb24-170"><a href="#cb24-170" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb24-171"><a href="#cb24-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-172"><a href="#cb24-172" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-173"><a href="#cb24-173" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 7. 결과 반환</span></span>
-<span id="cb24-174"><a href="#cb24-174" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
-<span id="cb24-175"><a href="#cb24-175" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"최종 데이터 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-176"><a href="#cb24-176" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"전처리 완료!"</span>)</span>
-<span id="cb24-177"><a href="#cb24-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-178"><a href="#cb24-178" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_filtered</span>
-<span id="cb24-179"><a href="#cb24-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-180"><a href="#cb24-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-181"><a href="#cb24-181" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb24-182"><a href="#cb24-182" aria-hidden="true" tabindex="-1"></a><span class="co"># 사용 예시</span></span>
-<span id="cb24-183"><a href="#cb24-183" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb24-184"><a href="#cb24-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-185"><a href="#cb24-185" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
-<span id="cb24-186"><a href="#cb24-186" aria-hidden="true" tabindex="-1"></a><span class="co"># blob_url = "https://github.com/~~/korean-elections/blob/main/original/Presidential_Elections/14th_1992/제14대 대통령선거 개표자료.xls"</span></span>
-<span id="cb24-187"><a href="#cb24-187" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election(blob_url)</span></span>
-<span id="cb24-188"><a href="#cb24-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-189"><a href="#cb24-189" aria-hidden="true" tabindex="-1"></a><span class="co"># 로컬에서 불러오는 경우</span></span>
-<span id="cb24-190"><a href="#cb24-190" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election("./data/14대_대선결과.xls")</span></span>
-<span id="cb24-191"><a href="#cb24-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-192"><a href="#cb24-192" aria-hidden="true" tabindex="-1"></a><span class="co"># 업로드된 파일 사용하는 경우</span></span>
-<span id="cb24-193"><a href="#cb24-193" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election("제14대 대통령선거 개표자료.xls")</span></span>
-<span id="cb24-194"><a href="#cb24-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-195"><a href="#cb24-195" aria-hidden="true" tabindex="-1"></a><span class="co"># 결과 확인</span></span>
-<span id="cb24-196"><a href="#cb24-196" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_14th.head())</span></span>
-<span id="cb24-197"><a href="#cb24-197" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_14th.columns.tolist())</span></span>
-<span id="cb24-198"><a href="#cb24-198" aria-hidden="true" tabindex="-1"></a><span class="co"># print("합계 행 개수:", df_14th[df_14th.iloc[:, 1].astype(str).str.contains("합계", na=False)].shape[0])</span></span>
-<span id="cb24-199"><a href="#cb24-199" aria-hidden="true" tabindex="-1"></a><span class="co"># print("소계 행 개수:", df_14th[df_14th.iloc[:, 2].astype(str).str.contains("소계", na=False)].shape[0])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-24" class="cell" data-execution_count="63">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 14대 대통령선거 데이터 전처리 함수</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_github_url_to_raw(github_url):</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co">    깃허브 blob URL을 raw URL로 변환</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co">    github_url : 깃허브 파일 URL</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co">    raw URL (pandas가 직접 읽을 수 있는 형태)</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/file.xls"</span></span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a><span class="co">    raw_url = convert_github_url_to_raw(blob_url)</span></span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a><span class="co">    # "https://github.com/user/repo/raw/main/file.xls"</span></span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'/blob/'</span> <span class="kw">in</span> github_url:</span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> github_url.replace(<span class="st">'/blob/'</span>, <span class="st">'/raw/'</span>)</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> github_url</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_14th_presidential_election(file_path):</span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a><span class="co">    14대 대통령선거 데이터 전처리 함수</span></span>
+<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a><span class="co">    엑셀 파일 구조:</span></span>
+<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a><span class="co">    - 0행: 헤더 첫 번째 줄</span></span>
+<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1행: 헤더 두 번째 줄</span></span>
+<span id="cb25-37"><a href="#cb25-37" aria-hidden="true" tabindex="-1"></a><span class="co">    - 2행: 헤더 세 번째 줄</span></span>
+<span id="cb25-38"><a href="#cb25-38" aria-hidden="true" tabindex="-1"></a><span class="co">    - 3행: 헤더 네 번째 줄</span></span>
+<span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a><span class="co">    - 4행부터: 실제 데이터</span></span>
+<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-41"><a href="#cb25-41" aria-hidden="true" tabindex="-1"></a><span class="co">    특별한 필터링 조건:</span></span>
+<span id="cb25-42"><a href="#cb25-42" aria-hidden="true" tabindex="-1"></a><span class="co">    - 구시군명에 "합계" 포함</span></span>
+<span id="cb25-43"><a href="#cb25-43" aria-hidden="true" tabindex="-1"></a><span class="co">    - 읍면동명에 "소계" 포함</span></span>
+<span id="cb25-44"><a href="#cb25-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-45"><a href="#cb25-45" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb25-46"><a href="#cb25-46" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
+<span id="cb25-47"><a href="#cb25-47" aria-hidden="true" tabindex="-1"></a><span class="co">    file_path : 파일 경로 (로컬 파일, 깃허브 blob URL, 또는 raw URL)</span></span>
+<span id="cb25-48"><a href="#cb25-48" aria-hidden="true" tabindex="-1"></a><span class="co">        - 로컬: "./data/14대_선거결과.xls"</span></span>
+<span id="cb25-49"><a href="#cb25-49" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 blob: "https://github.com/user/repo/blob/main/파일.xls" (자동 변환됨)</span></span>
+<span id="cb25-50"><a href="#cb25-50" aria-hidden="true" tabindex="-1"></a><span class="co">        - 깃허브 raw: "https://github.com/user/repo/raw/main/파일.xls"</span></span>
+<span id="cb25-51"><a href="#cb25-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-52"><a href="#cb25-52" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb25-53"><a href="#cb25-53" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb25-54"><a href="#cb25-54" aria-hidden="true" tabindex="-1"></a><span class="co">    전처리된 선거 데이터 (pandas DataFrame, 합계 및 소계 행만 포함)</span></span>
+<span id="cb25-55"><a href="#cb25-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-56"><a href="#cb25-56" aria-hidden="true" tabindex="-1"></a><span class="co">    Example:</span></span>
+<span id="cb25-57"><a href="#cb25-57" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb25-58"><a href="#cb25-58" aria-hidden="true" tabindex="-1"></a><span class="co">    # 깃허브에서 불러오기 (blob URL 그대로 사용 - 자동 변환됨)</span></span>
+<span id="cb25-59"><a href="#cb25-59" aria-hidden="true" tabindex="-1"></a><span class="co">    blob_url = "https://github.com/user/repo/blob/main/14대/선거결과.xls"</span></span>
+<span id="cb25-60"><a href="#cb25-60" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_14th_presidential_election(blob_url)</span></span>
+<span id="cb25-61"><a href="#cb25-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-62"><a href="#cb25-62" aria-hidden="true" tabindex="-1"></a><span class="co">    # 로컬 파일 불러오기</span></span>
+<span id="cb25-63"><a href="#cb25-63" aria-hidden="true" tabindex="-1"></a><span class="co">    df = process_14th_presidential_election("./data/14대_선거결과.xls")</span></span>
+<span id="cb25-64"><a href="#cb25-64" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb25-65"><a href="#cb25-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-66"><a href="#cb25-66" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-67"><a href="#cb25-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. 파일 로드 (자동 감지)</span></span>
+<span id="cb25-68"><a href="#cb25-68" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-69"><a href="#cb25-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> file_path.startswith((<span class="st">'http://'</span>, <span class="st">'https://'</span>)):</span>
+<span id="cb25-70"><a href="#cb25-70" aria-hidden="true" tabindex="-1"></a>        <span class="co"># URL인 경우 - blob URL이면 raw URL로 변환</span></span>
+<span id="cb25-71"><a href="#cb25-71" aria-hidden="true" tabindex="-1"></a>        raw_url <span class="op">=</span> convert_github_url_to_raw(file_path)</span>
+<span id="cb25-72"><a href="#cb25-72" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"웹에서 파일 로드: </span><span class="sc">{</span>raw_url<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-73"><a href="#cb25-73" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> raw_url <span class="op">!=</span> file_path:</span>
+<span id="cb25-74"><a href="#cb25-74" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  (blob URL을 raw URL로 자동 변환)"</span>)</span>
+<span id="cb25-75"><a href="#cb25-75" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(raw_url, header<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb25-76"><a href="#cb25-76" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb25-77"><a href="#cb25-77" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 로컬 파일인 경우</span></span>
+<span id="cb25-78"><a href="#cb25-78" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"로컬에서 파일 로드: </span><span class="sc">{</span>file_path<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-79"><a href="#cb25-79" aria-hidden="true" tabindex="-1"></a>        df_all <span class="op">=</span> pd.read_excel(file_path, header<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb25-80"><a href="#cb25-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-81"><a href="#cb25-81" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"원본 데이터 크기: </span><span class="sc">{</span>df_all<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-82"><a href="#cb25-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-83"><a href="#cb25-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-84"><a href="#cb25-84" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. 복합 헤더 구성 (0~3행 병합)</span></span>
+<span id="cb25-85"><a href="#cb25-85" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-86"><a href="#cb25-86" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 파이썬 인덱스는 0부터 시작하므로:</span></span>
+<span id="cb25-87"><a href="#cb25-87" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 0행 = iloc[0] (실제 1번째 행)</span></span>
+<span id="cb25-88"><a href="#cb25-88" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1행 = iloc[1] (실제 2번째 행)</span></span>
+<span id="cb25-89"><a href="#cb25-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2행 = iloc[2] (실제 3번째 행)</span></span>
+<span id="cb25-90"><a href="#cb25-90" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3행 = iloc[3] (실제 4번째 행)</span></span>
+<span id="cb25-91"><a href="#cb25-91" aria-hidden="true" tabindex="-1"></a>    header_row_1 <span class="op">=</span> df_all.iloc[<span class="dv">0</span>].fillna(<span class="st">""</span>)  <span class="co"># 첫 번째 헤더 행</span></span>
+<span id="cb25-92"><a href="#cb25-92" aria-hidden="true" tabindex="-1"></a>    header_row_2 <span class="op">=</span> df_all.iloc[<span class="dv">1</span>].fillna(<span class="st">""</span>)  <span class="co"># 두 번째 헤더 행</span></span>
+<span id="cb25-93"><a href="#cb25-93" aria-hidden="true" tabindex="-1"></a>    header_row_3 <span class="op">=</span> df_all.iloc[<span class="dv">2</span>].fillna(<span class="st">""</span>)  <span class="co"># 세 번째 헤더 행</span></span>
+<span id="cb25-94"><a href="#cb25-94" aria-hidden="true" tabindex="-1"></a>    header_row_4 <span class="op">=</span> df_all.iloc[<span class="dv">3</span>].fillna(<span class="st">""</span>)  <span class="co"># 네 번째 헤더 행</span></span>
+<span id="cb25-95"><a href="#cb25-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-96"><a href="#cb25-96" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4개 헤더 행을 "_"로 연결하여 통합 헤더 생성</span></span>
+<span id="cb25-97"><a href="#cb25-97" aria-hidden="true" tabindex="-1"></a>    combined_headers <span class="op">=</span> (</span>
+<span id="cb25-98"><a href="#cb25-98" aria-hidden="true" tabindex="-1"></a>        header_row_1.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb25-99"><a href="#cb25-99" aria-hidden="true" tabindex="-1"></a>        header_row_2.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb25-100"><a href="#cb25-100" aria-hidden="true" tabindex="-1"></a>        header_row_3.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span></span>
+<span id="cb25-101"><a href="#cb25-101" aria-hidden="true" tabindex="-1"></a>        header_row_4.astype(<span class="bu">str</span>)</span>
+<span id="cb25-102"><a href="#cb25-102" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb25-103"><a href="#cb25-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-104"><a href="#cb25-104" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"4개 헤더 행 병합 완료"</span>)</span>
+<span id="cb25-105"><a href="#cb25-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-106"><a href="#cb25-106" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-107"><a href="#cb25-107" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. 실제 데이터 추출 (4행부터)</span></span>
+<span id="cb25-108"><a href="#cb25-108" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-109"><a href="#cb25-109" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4행 = iloc[4] (실제 5번째 행)부터 데이터 시작</span></span>
+<span id="cb25-110"><a href="#cb25-110" aria-hidden="true" tabindex="-1"></a>    df_data <span class="op">=</span> df_all.iloc[<span class="dv">4</span>:].copy()</span>
+<span id="cb25-111"><a href="#cb25-111" aria-hidden="true" tabindex="-1"></a>    df_data.columns <span class="op">=</span> combined_headers</span>
+<span id="cb25-112"><a href="#cb25-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-113"><a href="#cb25-113" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"데이터 추출 후 크기: </span><span class="sc">{</span>df_data<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-114"><a href="#cb25-114" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"컬럼 수: </span><span class="sc">{</span><span class="bu">len</span>(df_data.columns)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-115"><a href="#cb25-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-116"><a href="#cb25-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-117"><a href="#cb25-117" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. 주요 컬럼 추출</span></span>
+<span id="cb25-118"><a href="#cb25-118" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-119"><a href="#cb25-119" aria-hidden="true" tabindex="-1"></a>    gugun_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"구시군명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
+<span id="cb25-120"><a href="#cb25-120" aria-hidden="true" tabindex="-1"></a>    dong_column <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> df_data.columns <span class="cf">if</span> <span class="st">"읍면동명"</span> <span class="kw">in</span> col][<span class="dv">0</span>]</span>
+<span id="cb25-121"><a href="#cb25-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-122"><a href="#cb25-122" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"주요 컬럼:"</span>)</span>
+<span id="cb25-123"><a href="#cb25-123" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 구시군: </span><span class="sc">{</span>gugun_column<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-124"><a href="#cb25-124" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 읍면동: </span><span class="sc">{</span>dong_column<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-125"><a href="#cb25-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-126"><a href="#cb25-126" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-127"><a href="#cb25-127" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 5. 합계 및 소계 행 필터링</span></span>
+<span id="cb25-128"><a href="#cb25-128" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-129"><a href="#cb25-129" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 14대 특별 조건:</span></span>
+<span id="cb25-130"><a href="#cb25-130" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 구시군명에 "합계" 포함</span></span>
+<span id="cb25-131"><a href="#cb25-131" aria-hidden="true" tabindex="-1"></a>    <span class="co"># - 읍면동명에 "소계" 포함</span></span>
+<span id="cb25-132"><a href="#cb25-132" aria-hidden="true" tabindex="-1"></a>    filter_mask <span class="op">=</span> (</span>
+<span id="cb25-133"><a href="#cb25-133" aria-hidden="true" tabindex="-1"></a>        df_data[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>) <span class="op">|</span></span>
+<span id="cb25-134"><a href="#cb25-134" aria-hidden="true" tabindex="-1"></a>        df_data[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-135"><a href="#cb25-135" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb25-136"><a href="#cb25-136" aria-hidden="true" tabindex="-1"></a>    df_filtered <span class="op">=</span> df_data[filter_mask].copy()</span>
+<span id="cb25-137"><a href="#cb25-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-138"><a href="#cb25-138" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"필터링 후 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-139"><a href="#cb25-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-140"><a href="#cb25-140" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 필터링 결과 상세 정보</span></span>
+<span id="cb25-141"><a href="#cb25-141" aria-hidden="true" tabindex="-1"></a>    total_rows <span class="op">=</span> df_filtered[</span>
+<span id="cb25-142"><a href="#cb25-142" aria-hidden="true" tabindex="-1"></a>        df_filtered[gugun_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"합계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-143"><a href="#cb25-143" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
+<span id="cb25-144"><a href="#cb25-144" aria-hidden="true" tabindex="-1"></a>    subtotal_rows <span class="op">=</span> df_filtered[</span>
+<span id="cb25-145"><a href="#cb25-145" aria-hidden="true" tabindex="-1"></a>        df_filtered[dong_column].astype(<span class="bu">str</span>).<span class="bu">str</span>.contains(<span class="st">"소계"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-146"><a href="#cb25-146" aria-hidden="true" tabindex="-1"></a>    ].shape[<span class="dv">0</span>]</span>
+<span id="cb25-147"><a href="#cb25-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-148"><a href="#cb25-148" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 합계 행: </span><span class="sc">{</span>total_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
+<span id="cb25-149"><a href="#cb25-149" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  - 소계 행: </span><span class="sc">{</span>subtotal_rows<span class="sc">}</span><span class="ss">개"</span>)</span>
+<span id="cb25-150"><a href="#cb25-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-151"><a href="#cb25-151" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-152"><a href="#cb25-152" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 6. 수치형 컬럼 정리</span></span>
+<span id="cb25-153"><a href="#cb25-153" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-154"><a href="#cb25-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3번째 컬럼(인덱스 3)부터는 보통 득표수 등 수치 데이터</span></span>
+<span id="cb25-155"><a href="#cb25-155" aria-hidden="true" tabindex="-1"></a>    numeric_columns <span class="op">=</span> df_filtered.columns[<span class="dv">3</span>:]</span>
+<span id="cb25-156"><a href="#cb25-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-157"><a href="#cb25-157" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"수치형 컬럼 개수: </span><span class="sc">{</span><span class="bu">len</span>(numeric_columns)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-158"><a href="#cb25-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-159"><a href="#cb25-159" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> numeric_columns:</span>
+<span id="cb25-160"><a href="#cb25-160" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 쉼표 제거 → 공백 제거 → 빈값을 0으로 → 정수형 변환</span></span>
+<span id="cb25-161"><a href="#cb25-161" aria-hidden="true" tabindex="-1"></a>        df_filtered[col] <span class="op">=</span> (</span>
+<span id="cb25-162"><a href="#cb25-162" aria-hidden="true" tabindex="-1"></a>            df_filtered[col]</span>
+<span id="cb25-163"><a href="#cb25-163" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">str</span>)           <span class="co"># 문자열로 변환</span></span>
+<span id="cb25-164"><a href="#cb25-164" aria-hidden="true" tabindex="-1"></a>            .fillna(<span class="st">"0"</span>)           <span class="co"># NaN 값을 "0" 문자열로 변경</span></span>
+<span id="cb25-165"><a href="#cb25-165" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.replace(<span class="st">","</span>, <span class="st">""</span>)  <span class="co"># 천 단위 구분자 제거 (예: "1,234" → "1234")</span></span>
+<span id="cb25-166"><a href="#cb25-166" aria-hidden="true" tabindex="-1"></a>            .<span class="bu">str</span>.strip()           <span class="co"># 앞뒤 공백 제거</span></span>
+<span id="cb25-167"><a href="#cb25-167" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">"nan"</span>, <span class="st">"0"</span>)   <span class="co"># 'nan' 문자열을 "0"으로 변경</span></span>
+<span id="cb25-168"><a href="#cb25-168" aria-hidden="true" tabindex="-1"></a>            .replace(<span class="st">""</span>, <span class="st">"0"</span>)      <span class="co"># 빈 문자열을 "0"으로 변경</span></span>
+<span id="cb25-169"><a href="#cb25-169" aria-hidden="true" tabindex="-1"></a>            .astype(<span class="bu">int</span>)           <span class="co"># 최종적으로 정수형으로 변환</span></span>
+<span id="cb25-170"><a href="#cb25-170" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb25-171"><a href="#cb25-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-172"><a href="#cb25-172" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-173"><a href="#cb25-173" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 7. 결과 반환</span></span>
+<span id="cb25-174"><a href="#cb25-174" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ================================</span></span>
+<span id="cb25-175"><a href="#cb25-175" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"최종 데이터 크기: </span><span class="sc">{</span>df_filtered<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-176"><a href="#cb25-176" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"전처리 완료!"</span>)</span>
+<span id="cb25-177"><a href="#cb25-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-178"><a href="#cb25-178" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_filtered</span>
+<span id="cb25-179"><a href="#cb25-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-180"><a href="#cb25-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-181"><a href="#cb25-181" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb25-182"><a href="#cb25-182" aria-hidden="true" tabindex="-1"></a><span class="co"># 사용 예시</span></span>
+<span id="cb25-183"><a href="#cb25-183" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb25-184"><a href="#cb25-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-185"><a href="#cb25-185" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
+<span id="cb25-186"><a href="#cb25-186" aria-hidden="true" tabindex="-1"></a><span class="co"># blob_url = "https://github.com/~~/korean-elections/blob/main/original/Presidential_Elections/14th_1992/제14대 대통령선거 개표자료.xls"</span></span>
+<span id="cb25-187"><a href="#cb25-187" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election(blob_url)</span></span>
+<span id="cb25-188"><a href="#cb25-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-189"><a href="#cb25-189" aria-hidden="true" tabindex="-1"></a><span class="co"># 로컬에서 불러오는 경우</span></span>
+<span id="cb25-190"><a href="#cb25-190" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election("./data/14대_대선결과.xls")</span></span>
+<span id="cb25-191"><a href="#cb25-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-192"><a href="#cb25-192" aria-hidden="true" tabindex="-1"></a><span class="co"># 업로드된 파일 사용하는 경우</span></span>
+<span id="cb25-193"><a href="#cb25-193" aria-hidden="true" tabindex="-1"></a><span class="co"># df_14th = process_14th_presidential_election("제14대 대통령선거 개표자료.xls")</span></span>
+<span id="cb25-194"><a href="#cb25-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-195"><a href="#cb25-195" aria-hidden="true" tabindex="-1"></a><span class="co"># 결과 확인</span></span>
+<span id="cb25-196"><a href="#cb25-196" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_14th.head())</span></span>
+<span id="cb25-197"><a href="#cb25-197" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_14th.columns.tolist())</span></span>
+<span id="cb25-198"><a href="#cb25-198" aria-hidden="true" tabindex="-1"></a><span class="co"># print("합계 행 개수:", df_14th[df_14th.iloc[:, 1].astype(str).str.contains("합계", na=False)].shape[0])</span></span>
+<span id="cb25-199"><a href="#cb25-199" aria-hidden="true" tabindex="-1"></a><span class="co"># print("소계 행 개수:", df_14th[df_14th.iloc[:, 2].astype(str).str.contains("소계", na=False)].shape[0])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-24" class="cell" data-outputid="4449caa8-4f0d-441e-aa04-ea49bde99f99" data-execution_count="64">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>blob_url14 <span class="op">=</span> <span class="st">"https://github.com/sw1kwon/korean-elections/blob/main/original/Presidential_Elections/14th_1992/</span><span class="sc">%E</span><span class="st">C%A0%9C14</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">20</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">ED</span><span class="sc">%86%</span><span class="st">B5</span><span class="sc">%E</span><span class="st">B%A0%B9</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%84%</span><span class="st">A0</span><span class="sc">%E</span><span class="st">A%B1%B0</span><span class="sc">%20%</span><span class="st">EA%B0%9C</span><span class="sc">%E</span><span class="st">D</span><span class="sc">%91%</span><span class="st">9C</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%9E%90%</span><span class="st">EB%A3%8C.xls"</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>df_14th <span class="op">=</span> process_14th_presidential_election(blob_url14)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-25" class="cell" data-outputid="4449caa8-4f0d-441e-aa04-ea49bde99f99" data-execution_count="64">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 깃허브 blob URL로 불러오는 경우 (자동으로 raw URL로 변환됨)</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>blob_url14 <span class="op">=</span> <span class="st">"https://github.com/sw1kwon/korean-elections/blob/main/original/Presidential_Elections/14th_1992/</span><span class="sc">%E</span><span class="st">C%A0%9C14</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">20</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">ED</span><span class="sc">%86%</span><span class="st">B5</span><span class="sc">%E</span><span class="st">B%A0%B9</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%84%</span><span class="st">A0</span><span class="sc">%E</span><span class="st">A%B1%B0</span><span class="sc">%20%</span><span class="st">EA%B0%9C</span><span class="sc">%E</span><span class="st">D</span><span class="sc">%91%</span><span class="st">9C</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%9E%90%</span><span class="st">EB%A3%8C.xls"</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>df_14th <span class="op">=</span> process_14th_presidential_election(blob_url14)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>웹에서 파일 로드: https://github.com/sw1kwon/korean-elections/raw/main/original/Presidential_Elections/14th_1992/%EC%A0%9C14%EB%8C%80%20%EB%8C%80%ED%86%B5%EB%A0%B9%EC%84%A0%EA%B1%B0%20%EA%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.xls
   (blob URL을 raw URL로 자동 변환)
@@ -3872,8 +3886,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 전처리 완료!</code></pre>
 </div>
 </div>
-<div id="cell-25" class="cell" data-outputid="2198c0ff-463f-493e-e31f-b666feb4f15d" data-execution_count="65">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>df_14th</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-26" class="cell" data-outputid="2198c0ff-463f-493e-e31f-b666feb4f15d" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df_14th</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="65">
 
   <div id="df-7d7485f4-4f92-4225-b164-8829aa147c55" class="colab-df-container">
@@ -4399,8 +4413,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-26" class="cell" data-outputid="b606e871-15fe-4108-e85b-e78e46b9d21a" data-execution_count="66">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df_14th.columns.tolist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-27" class="cell" data-outputid="b606e871-15fe-4108-e85b-e78e46b9d21a" data-execution_count="66">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df_14th.columns.tolist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="66">
 <pre><code>['시도명___',
  '구시군명___',
@@ -4422,27 +4436,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  '기권수___']</code></pre>
 </div>
 </div>
-<div id="cell-27" class="cell" data-execution_count="67">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>rename_dict14 <span class="op">=</span> {</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'시도명___'</span>: <span class="st">'시도'</span>,</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'구시군명___'</span>: <span class="st">'구시군'</span>,</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'선거인수___'</span>: <span class="st">'선거인수'</span>,</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'투표자수___'</span>: <span class="st">'투표수'</span>,</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'유효투표수_후보자별 득표수_민자당_김영삼'</span>: <span class="st">'득표수_1_민주자유당_김영삼'</span>,</span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__민주당_김대중'</span>: <span class="st">'득표수_2_민주당_김대중'</span>,</span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민당_정주영'</span>: <span class="st">'득표수_3_통일국민당_정주영'</span>,</span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__새한국당_이종찬'</span>: <span class="st">'득표수_4_새한국당_이종찬'</span>,</span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__신정당_박찬종'</span>: <span class="st">'득표수_5_신정치개혁당_박찬종'</span>,</span>
-<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__정의당_이병호'</span>: <span class="st">'득표수_6_대한정의당_이병호'</span>,</span>
-<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__무소속_김옥선'</span>: <span class="st">'득표수_7_무소속_김옥선'</span>,</span>
-<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__무소속_백기완'</span>: <span class="st">'득표수_8_무소속_백기완'</span>,</span>
-<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'_계__'</span>: <span class="st">'득표수_계'</span>,</span>
-<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무효투표수___'</span>: <span class="st">'무효투표수'</span>,</span>
-<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'기권수___'</span>: <span class="st">'기권수'</span></span>
-<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-28" class="cell" data-execution_count="67">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>rename_dict14 <span class="op">=</span> {</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'시도명___'</span>: <span class="st">'시도'</span>,</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'구시군명___'</span>: <span class="st">'구시군'</span>,</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'선거인수___'</span>: <span class="st">'선거인수'</span>,</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'투표자수___'</span>: <span class="st">'투표수'</span>,</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'유효투표수_후보자별 득표수_민자당_김영삼'</span>: <span class="st">'득표수_1_민주자유당_김영삼'</span>,</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__민주당_김대중'</span>: <span class="st">'득표수_2_민주당_김대중'</span>,</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__국민당_정주영'</span>: <span class="st">'득표수_3_통일국민당_정주영'</span>,</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__새한국당_이종찬'</span>: <span class="st">'득표수_4_새한국당_이종찬'</span>,</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__신정당_박찬종'</span>: <span class="st">'득표수_5_신정치개혁당_박찬종'</span>,</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__정의당_이병호'</span>: <span class="st">'득표수_6_대한정의당_이병호'</span>,</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__무소속_김옥선'</span>: <span class="st">'득표수_7_무소속_김옥선'</span>,</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'__무소속_백기완'</span>: <span class="st">'득표수_8_무소속_백기완'</span>,</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'_계__'</span>: <span class="st">'득표수_계'</span>,</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'무효투표수___'</span>: <span class="st">'무효투표수'</span>,</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'기권수___'</span>: <span class="st">'기권수'</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-28" class="cell" data-outputid="99188138-c465-4e24-e280-03507063765d" data-execution_count="68">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df_14th.rename(columns<span class="op">=</span>rename_dict14).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-29" class="cell" data-outputid="99188138-c465-4e24-e280-03507063765d" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df_14th.rename(columns<span class="op">=</span>rename_dict14).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="68">
 
   <div id="df-a9499e01-8f72-4f3f-a5b8-dd5deedb12cd" class="colab-df-container">
@@ -4880,19 +4894,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-29" class="cell" data-execution_count="69">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df_14th <span class="op">=</span> df_14th.rename(columns<span class="op">=</span>rename_dict14).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-30" class="cell" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df_14th <span class="op">=</span> df_14th.rename(columns<span class="op">=</span>rename_dict14).drop(columns<span class="op">=</span>[<span class="st">'읍면동명___'</span>, <span class="st">'부재자수___'</span>,<span class="st">'부재자투표자수___'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-30" class="cell" data-execution_count="70">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 구시군 원소 괄호 제거</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df_14th[<span class="st">'구시군'</span>] <span class="op">=</span> (</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    df_14th[<span class="st">'구시군'</span>]</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.replace(<span class="vs">r"\(.*\)"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.strip()</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-31" class="cell" data-execution_count="70">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 구시군 원소 괄호 제거</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>df_14th[<span class="st">'구시군'</span>] <span class="op">=</span> (</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    df_14th[<span class="st">'구시군'</span>]</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.replace(<span class="vs">r"\(.*\)"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.strip()</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-31" class="cell" data-outputid="f56967c0-191c-483e-f382-b0f16ef368f2" data-execution_count="71">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df_14th[df_14th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-32" class="cell" data-outputid="f56967c0-191c-483e-f382-b0f16ef368f2" data-execution_count="71">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>df_14th[df_14th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="71">
 
   <div id="df-21686c1a-0e07-4392-9ec6-85a50d1a3171" class="colab-df-container">
@@ -5419,8 +5433,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-32" class="cell" data-execution_count="72">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>df_14th.to_csv(<span class="st">"temp1_president_14.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-33" class="cell" data-execution_count="72">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df_14th.to_csv(<span class="st">"temp1_president_14.csv"</span>, index<span class="op">=</span><span class="va">False</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="참고" class="level2">
 <h2 class="anchored" data-anchor-id="참고">참고</h2>
@@ -5431,27 +5445,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>가끔 확인할 때마다 다른 선거들은 일치하기는 했음</li>
 </ul></li>
 </ul>
-<div id="cell-35" class="cell" data-outputid="3ac00d7c-ee47-4762-ab52-59e6d412f5cb" data-execution_count="73">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># '구시군'이 '합계'인 행만 추출</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> df_14th[df_14th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2번째 행 이후의 '선거인수' 합계 계산</span></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>total_voters <span class="op">=</span> filtered.iloc[<span class="dv">1</span>:][<span class="st">'선거인수'</span>].<span class="bu">sum</span>()</span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"두 번째 이후의 선거인수 합계:"</span>, total_voters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-36" class="cell" data-outputid="3ac00d7c-ee47-4762-ab52-59e6d412f5cb" data-execution_count="73">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># '구시군'이 '합계'인 행만 추출</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> df_14th[df_14th[<span class="st">'구시군'</span>] <span class="op">==</span> <span class="st">'합계'</span>]</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2번째 행 이후의 '선거인수' 합계 계산</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>total_voters <span class="op">=</span> filtered.iloc[<span class="dv">1</span>:][<span class="st">'선거인수'</span>].<span class="bu">sum</span>()</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"두 번째 이후의 선거인수 합계:"</span>, total_voters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>두 번째 이후의 선거인수 합계: 28676547</code></pre>
 </div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="p14_16_files/figure-html/cell-36-1-0bc61685-c576-4bd3-bc47-adb9e25469ad.png" class="img-fluid figure-img"></p>
+<p><img src="v1_p14_16_files/figure-html/cell-37-1-0bc61685-c576-4bd3-bc47-adb9e25469ad.png" class="img-fluid figure-img"></p>
 <figcaption>image.png</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="p14_16_files/figure-html/cell-37-1-9e15efed-5c93-4be9-882d-0ceb7e7e16aa.png" class="img-fluid figure-img"></p>
+<p><img src="v1_p14_16_files/figure-html/cell-38-1-9e15efed-5c93-4be9-882d-0ceb7e7e16aa.png" class="img-fluid figure-img"></p>
 <figcaption>image.png</figcaption>
 </figure>
 </div>
