@@ -23,3 +23,6 @@ format:
     highlight-style: github
     css: styles.css
     collapsible: true
+
+execute:
+  freeze: auto
