@@ -6,7 +6,7 @@ listing:
     - "date desc"
     - "title asc"
   type: table
-  categories: true
+  categories: numbered
   sort-ui: false
   filter-ui: false
 page-layout: full
