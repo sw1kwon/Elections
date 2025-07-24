@@ -25,4 +25,4 @@ format:
     collapsible: true
 
 execute:
-  freeze: auto
+  freeze: true
