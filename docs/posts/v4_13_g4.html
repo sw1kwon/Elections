@@ -698,7 +698,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="preprocessing-merge" class="level1">
 <h1>Preprocessing &amp; Merge</h1>
-<div id="cell-4" class="cell" data-outputid="5e99b413-2679-4fec-ec21-269bc399a68c" data-execution_count="2">
+<div id="cell-4" class="cell" data-outputid="383ba7ee-79b3-4de3-f9d2-11c0c3a62dd3" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>AVAILABLE_REGIONS <span class="op">=</span> [</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'seoul'</span>, <span class="st">'busan'</span>, <span class="st">'daegu'</span>, <span class="st">'incheon'</span>, <span class="st">'gwangju'</span>, <span class="st">'daejeon'</span>,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ulsan'</span>, <span class="st">'gyeonggi'</span>, <span class="st">'gangwon'</span>, <span class="st">'chungbuk'</span>, <span class="st">'chungnam'</span>,</span>
@@ -985,7 +985,7 @@ Name: count, dtype: int64
 실제 후보 컬럼들:
   득표수_1_열린우리당_진대제
   득표수_2_한나라당_김문수
-  득표수_3_민주당_최기복
+  득표수_3_민주당_박정일
   득표수_4_민주노동당_김용한
 실제 존재하는 후보번호: [1, 2, 3, 4]
 적용된 매핑: {1: '진보정당', 2: '보수정당', 3: '그외정당', 4: '그외정당'}
@@ -1321,11 +1321,11 @@ Name: count, dtype: int64
 <div id="cell-7" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_seoul <span class="op">=</span> election_results[<span class="st">'df_seoul'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-8" class="cell" data-outputid="b4ee7961-4a05-46ec-e185-18db66782c2a" data-execution_count="4">
+<div id="cell-8" class="cell" data-outputid="16cff36d-a3f5-4235-bac2-868faec0b40f" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_seoul</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 
-  <div id="df-b06bf07c-4234-4d93-ab8c-f56b96da9799" class="colab-df-container">
+  <div id="df-0d493835-7f6e-4950-a150-14bda91746f8" class="colab-df-container">
     <div>
 
 
@@ -1989,7 +1989,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b06bf07c-4234-4d93-ab8c-f56b96da9799')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0d493835-7f6e-4950-a150-14bda91746f8')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -2039,12 +2039,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b06bf07c-4234-4d93-ab8c-f56b96da9799 button.colab-df-convert');
+        document.querySelector('#df-0d493835-7f6e-4950-a150-14bda91746f8 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b06bf07c-4234-4d93-ab8c-f56b96da9799');
+        const element = document.querySelector('#df-0d493835-7f6e-4950-a150-14bda91746f8');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2064,8 +2064,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-c84bd427-897f-446b-ae3b-de76daf7e86e">
-      <button class="colab-df-quickchart" onclick="quickchart('df-c84bd427-897f-446b-ae3b-de76daf7e86e')" title="Suggest charts" style="display:none;">
+    <div id="df-afa6ea1f-146e-4cc1-8ca5-68c8fe17f3f0">
+      <button class="colab-df-quickchart" onclick="quickchart('df-afa6ea1f-146e-4cc1-8ca5-68c8fe17f3f0')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -2181,14 +2181,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-c84bd427-897f-446b-ae3b-de76daf7e86e button');
+            document.querySelector('#df-afa6ea1f-146e-4cc1-8ca5-68c8fe17f3f0 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_3cd7e2c9-ccb4-4501-a901-52d3aee8770d">
+  <div id="id_b1f3b965-ab18-46e5-a673-a4f6ad61fe64">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -2229,7 +2229,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_3cd7e2c9-ccb4-4501-a901-52d3aee8770d button.colab-df-generate');
+        document.querySelector('#id_b1f3b965-ab18-46e5-a673-a4f6ad61fe64 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -2252,7 +2252,7 @@ Name: count, dtype: int64
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'서울특별시'</span>, <span class="st">'서울'</span>))</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-11" class="cell" data-outputid="b0ea8323-dbb3-43e7-f6b2-52d4ff493a09" data-execution_count="6">
+<div id="cell-11" class="cell" data-outputid="b01d3a71-6c8f-41b7-bb0c-c74728ee121a" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_seoul.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -2284,11 +2284,11 @@ Name: count, dtype: int64
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-13" class="cell" data-outputid="1524aef6-f5d4-462c-ba4d-2c1aac91f7a2" data-execution_count="8">
+<div id="cell-13" class="cell" data-outputid="573ed538-1414-4968-8fa5-ae13179d56a7" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_seoul</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 
-  <div id="df-158f751c-21dd-483a-b499-0ffa4066c8cc" class="colab-df-container">
+  <div id="df-916c17d1-f824-4c69-a076-e6909addc906" class="colab-df-container">
     <div>
 
 
@@ -2952,7 +2952,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-158f751c-21dd-483a-b499-0ffa4066c8cc')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-916c17d1-f824-4c69-a076-e6909addc906')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -3002,12 +3002,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-158f751c-21dd-483a-b499-0ffa4066c8cc button.colab-df-convert');
+        document.querySelector('#df-916c17d1-f824-4c69-a076-e6909addc906 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-158f751c-21dd-483a-b499-0ffa4066c8cc');
+        const element = document.querySelector('#df-916c17d1-f824-4c69-a076-e6909addc906');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3027,8 +3027,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-0be6d397-5495-4484-b984-83b3433b7f67">
-      <button class="colab-df-quickchart" onclick="quickchart('df-0be6d397-5495-4484-b984-83b3433b7f67')" title="Suggest charts" style="display:none;">
+    <div id="df-7e32911f-d61c-4626-b7d8-6f0a08936c9a">
+      <button class="colab-df-quickchart" onclick="quickchart('df-7e32911f-d61c-4626-b7d8-6f0a08936c9a')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -3144,14 +3144,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-0be6d397-5495-4484-b984-83b3433b7f67 button');
+            document.querySelector('#df-7e32911f-d61c-4626-b7d8-6f0a08936c9a button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_67e54f85-48dd-498b-b77d-07a52dc4dde7">
+  <div id="id_98919844-55c6-41ac-90d4-307290f93339">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -3192,7 +3192,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_67e54f85-48dd-498b-b77d-07a52dc4dde7 button.colab-df-generate');
+        document.querySelector('#id_98919844-55c6-41ac-90d4-307290f93339 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -3229,11 +3229,11 @@ Name: count, dtype: int64
 <div id="cell-17" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df_busan <span class="op">=</span> election_results[<span class="st">'df_busan'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-18" class="cell" data-outputid="f51bd830-35c7-46be-8f0f-3064260f2bf7" data-execution_count="11">
+<div id="cell-18" class="cell" data-outputid="14740597-df60-4e68-92fe-aa7c2e5e0f8b" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df_busan</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 
-  <div id="df-c60bc123-9c14-468c-8e10-f6c4feec5138" class="colab-df-container">
+  <div id="df-6d35a792-fc93-4d38-9414-7fb9dfea0919" class="colab-df-container">
     <div>
 
 
@@ -3681,7 +3681,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c60bc123-9c14-468c-8e10-f6c4feec5138')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6d35a792-fc93-4d38-9414-7fb9dfea0919')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -3731,12 +3731,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c60bc123-9c14-468c-8e10-f6c4feec5138 button.colab-df-convert');
+        document.querySelector('#df-6d35a792-fc93-4d38-9414-7fb9dfea0919 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c60bc123-9c14-468c-8e10-f6c4feec5138');
+        const element = document.querySelector('#df-6d35a792-fc93-4d38-9414-7fb9dfea0919');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3756,8 +3756,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-99baebaf-d9f0-415b-930d-d328352f1a1f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-99baebaf-d9f0-415b-930d-d328352f1a1f')" title="Suggest charts" style="display:none;">
+    <div id="df-3a281093-aa29-46e5-8723-f09495589196">
+      <button class="colab-df-quickchart" onclick="quickchart('df-3a281093-aa29-46e5-8723-f09495589196')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -3873,14 +3873,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-99baebaf-d9f0-415b-930d-d328352f1a1f button');
+            document.querySelector('#df-3a281093-aa29-46e5-8723-f09495589196 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_f50a113d-8822-464e-8b08-55e5ef1db2cd">
+  <div id="id_1b9f410e-7a7e-417a-ad3e-655c24d22fcb">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -3921,7 +3921,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_f50a113d-8822-464e-8b08-55e5ef1db2cd button.colab-df-generate');
+        document.querySelector('#id_1b9f410e-7a7e-417a-ad3e-655c24d22fcb button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -3944,7 +3944,7 @@ Name: count, dtype: int64
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'부산광역시'</span>, <span class="st">'부산'</span>))</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-21" class="cell" data-outputid="76ea1cbd-d4b1-4cb1-aaf4-c1b7b39da54a" data-execution_count="13">
+<div id="cell-21" class="cell" data-outputid="7c6b9061-db2f-4f65-a0d3-dc6e4432dc46" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df_busan.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -3976,11 +3976,11 @@ Name: count, dtype: int64
 <span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-23" class="cell" data-outputid="a6c2c091-2754-4974-9b72-7a2870259ca3" data-execution_count="15">
+<div id="cell-23" class="cell" data-outputid="28ab3e9c-7651-4b0d-e2db-6ee1533e2f94" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df_busan</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 
-  <div id="df-ce743a1f-0ac3-4c7f-b79b-bf0975604081" class="colab-df-container">
+  <div id="df-ea6e170a-44b3-4a2e-988e-6b793e95728f" class="colab-df-container">
     <div>
 
 
@@ -4428,7 +4428,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-ce743a1f-0ac3-4c7f-b79b-bf0975604081')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ea6e170a-44b3-4a2e-988e-6b793e95728f')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -4478,12 +4478,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-ce743a1f-0ac3-4c7f-b79b-bf0975604081 button.colab-df-convert');
+        document.querySelector('#df-ea6e170a-44b3-4a2e-988e-6b793e95728f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-ce743a1f-0ac3-4c7f-b79b-bf0975604081');
+        const element = document.querySelector('#df-ea6e170a-44b3-4a2e-988e-6b793e95728f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -4503,8 +4503,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-bf7abe44-e366-47dc-8fb2-c6ef4e59c853">
-      <button class="colab-df-quickchart" onclick="quickchart('df-bf7abe44-e366-47dc-8fb2-c6ef4e59c853')" title="Suggest charts" style="display:none;">
+    <div id="df-16d0ad27-aecb-4c89-8736-c207861d83a9">
+      <button class="colab-df-quickchart" onclick="quickchart('df-16d0ad27-aecb-4c89-8736-c207861d83a9')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -4620,14 +4620,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-bf7abe44-e366-47dc-8fb2-c6ef4e59c853 button');
+            document.querySelector('#df-16d0ad27-aecb-4c89-8736-c207861d83a9 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_0d6d29ba-957c-4c3e-b765-ed9ab752d341">
+  <div id="id_4819eac5-e580-4f17-b246-38d3b2d50aaa">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -4668,7 +4668,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_0d6d29ba-957c-4c3e-b765-ed9ab752d341 button.colab-df-generate');
+        document.querySelector('#id_4819eac5-e580-4f17-b246-38d3b2d50aaa button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -4705,11 +4705,11 @@ Name: count, dtype: int64
 <div id="cell-27" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df_daegu <span class="op">=</span> election_results[<span class="st">'df_daegu'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-28" class="cell" data-outputid="12e95e4c-e670-4c38-eb0a-716fffc4f241" data-execution_count="18">
+<div id="cell-28" class="cell" data-outputid="44cbf5b9-7ab3-460c-8585-9f8ffe33da51" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_daegu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 
-  <div id="df-1aefe2bc-f409-4ee8-9bae-2bf6d526aa88" class="colab-df-container">
+  <div id="df-cf498d22-202d-4239-998b-d91b620bc7c7" class="colab-df-container">
     <div>
 
 
@@ -4965,7 +4965,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1aefe2bc-f409-4ee8-9bae-2bf6d526aa88')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cf498d22-202d-4239-998b-d91b620bc7c7')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -5015,12 +5015,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1aefe2bc-f409-4ee8-9bae-2bf6d526aa88 button.colab-df-convert');
+        document.querySelector('#df-cf498d22-202d-4239-998b-d91b620bc7c7 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1aefe2bc-f409-4ee8-9bae-2bf6d526aa88');
+        const element = document.querySelector('#df-cf498d22-202d-4239-998b-d91b620bc7c7');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -5040,8 +5040,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-b4be55c5-9cdb-47d3-830d-f636c8755cae">
-      <button class="colab-df-quickchart" onclick="quickchart('df-b4be55c5-9cdb-47d3-830d-f636c8755cae')" title="Suggest charts" style="display:none;">
+    <div id="df-41dc7d45-1bb9-4979-b59a-9c8c7d6b2851">
+      <button class="colab-df-quickchart" onclick="quickchart('df-41dc7d45-1bb9-4979-b59a-9c8c7d6b2851')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -5157,14 +5157,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-b4be55c5-9cdb-47d3-830d-f636c8755cae button');
+            document.querySelector('#df-41dc7d45-1bb9-4979-b59a-9c8c7d6b2851 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_6509bdf3-2497-4a25-b393-b226d3d3273a">
+  <div id="id_3e83425b-9398-4b37-92bf-8004c64bd711">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -5205,7 +5205,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_6509bdf3-2497-4a25-b393-b226d3d3273a button.colab-df-generate');
+        document.querySelector('#id_3e83425b-9398-4b37-92bf-8004c64bd711 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -5228,7 +5228,7 @@ Name: count, dtype: int64
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'대구광역시'</span>, <span class="st">'대구'</span>))</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-31" class="cell" data-outputid="0ba03327-cc71-4f04-bde5-700aeec3785d" data-execution_count="20">
+<div id="cell-31" class="cell" data-outputid="02d7ad79-c0df-487e-fb86-cbba80224450" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df_daegu.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -5260,11 +5260,11 @@ Name: count, dtype: int64
 <span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-33" class="cell" data-outputid="690bc8ca-4a6e-48d5-afd9-e6ddeffb60fb" data-execution_count="22">
+<div id="cell-33" class="cell" data-outputid="e7140c49-7b4c-404f-90c3-c831bf00527d" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df_daegu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 
-  <div id="df-88f554bd-77db-4d04-921a-98667382121b" class="colab-df-container">
+  <div id="df-ac164aed-83cc-4463-8b73-92b098606036" class="colab-df-container">
     <div>
 
 
@@ -5520,7 +5520,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-88f554bd-77db-4d04-921a-98667382121b')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ac164aed-83cc-4463-8b73-92b098606036')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -5570,12 +5570,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-88f554bd-77db-4d04-921a-98667382121b button.colab-df-convert');
+        document.querySelector('#df-ac164aed-83cc-4463-8b73-92b098606036 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-88f554bd-77db-4d04-921a-98667382121b');
+        const element = document.querySelector('#df-ac164aed-83cc-4463-8b73-92b098606036');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -5595,8 +5595,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-42cf83ab-486b-4e18-8496-1294599ce773">
-      <button class="colab-df-quickchart" onclick="quickchart('df-42cf83ab-486b-4e18-8496-1294599ce773')" title="Suggest charts" style="display:none;">
+    <div id="df-8f53f8e7-6260-4e53-9e49-9b53010048ec">
+      <button class="colab-df-quickchart" onclick="quickchart('df-8f53f8e7-6260-4e53-9e49-9b53010048ec')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -5712,14 +5712,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-42cf83ab-486b-4e18-8496-1294599ce773 button');
+            document.querySelector('#df-8f53f8e7-6260-4e53-9e49-9b53010048ec button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_b4628901-4a3a-485d-9f6a-3e395f6dbc76">
+  <div id="id_16284d86-9f55-4126-b9c2-04b53de528be">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -5760,7 +5760,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_b4628901-4a3a-485d-9f6a-3e395f6dbc76 button.colab-df-generate');
+        document.querySelector('#id_16284d86-9f55-4126-b9c2-04b53de528be button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -5797,11 +5797,11 @@ Name: count, dtype: int64
 <div id="cell-37" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df_incheon <span class="op">=</span> election_results[<span class="st">'df_incheon'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-38" class="cell" data-outputid="48e6c1d2-beda-41e1-b900-ddb3a75317d5" data-execution_count="25">
+<div id="cell-38" class="cell" data-outputid="74f635e3-f96d-45fd-8685-f67e9c1114ad" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df_incheon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 
-  <div id="df-b043b24e-8209-4991-a67f-155984f9afe6" class="colab-df-container">
+  <div id="df-8c038a14-2f14-48d7-87b0-87404fde07d6" class="colab-df-container">
     <div>
 
 
@@ -6105,7 +6105,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b043b24e-8209-4991-a67f-155984f9afe6')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-8c038a14-2f14-48d7-87b0-87404fde07d6')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -6155,12 +6155,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b043b24e-8209-4991-a67f-155984f9afe6 button.colab-df-convert');
+        document.querySelector('#df-8c038a14-2f14-48d7-87b0-87404fde07d6 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b043b24e-8209-4991-a67f-155984f9afe6');
+        const element = document.querySelector('#df-8c038a14-2f14-48d7-87b0-87404fde07d6');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -6180,8 +6180,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-32d5ace7-3a77-451b-8f1d-f1464a41bc2c">
-      <button class="colab-df-quickchart" onclick="quickchart('df-32d5ace7-3a77-451b-8f1d-f1464a41bc2c')" title="Suggest charts" style="display:none;">
+    <div id="df-e6481046-9913-460e-870c-5556bc4ee2f4">
+      <button class="colab-df-quickchart" onclick="quickchart('df-e6481046-9913-460e-870c-5556bc4ee2f4')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -6297,14 +6297,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-32d5ace7-3a77-451b-8f1d-f1464a41bc2c button');
+            document.querySelector('#df-e6481046-9913-460e-870c-5556bc4ee2f4 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_a446e214-4db1-4b74-a604-ea6903f3ff9e">
+  <div id="id_474dcd9a-c0aa-4c6c-a91e-32d981c794df">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -6345,7 +6345,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_a446e214-4db1-4b74-a604-ea6903f3ff9e button.colab-df-generate');
+        document.querySelector('#id_474dcd9a-c0aa-4c6c-a91e-32d981c794df button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -6368,7 +6368,7 @@ Name: count, dtype: int64
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'인천광역시'</span>, <span class="st">'인천'</span>))</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-41" class="cell" data-outputid="8a9bab02-d3ee-4403-d894-d12be4e5a352" data-execution_count="27">
+<div id="cell-41" class="cell" data-outputid="be8c2a5c-e2fc-42ae-eec1-17a3f689f561" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df_incheon.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -6400,11 +6400,11 @@ Name: count, dtype: int64
 <span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-43" class="cell" data-outputid="7c140b27-bfd0-48c2-81e0-4b32d0931772" data-execution_count="29">
+<div id="cell-43" class="cell" data-outputid="e7a087e4-c22b-46d5-ed93-be55de6b717d" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df_incheon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 
-  <div id="df-58fc483d-d3e5-4bca-9778-aefb696bf6ab" class="colab-df-container">
+  <div id="df-b325fa0f-f5fe-480f-b6e0-fd12f566fa8b" class="colab-df-container">
     <div>
 
 
@@ -6708,7 +6708,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-58fc483d-d3e5-4bca-9778-aefb696bf6ab')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b325fa0f-f5fe-480f-b6e0-fd12f566fa8b')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -6758,12 +6758,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-58fc483d-d3e5-4bca-9778-aefb696bf6ab button.colab-df-convert');
+        document.querySelector('#df-b325fa0f-f5fe-480f-b6e0-fd12f566fa8b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-58fc483d-d3e5-4bca-9778-aefb696bf6ab');
+        const element = document.querySelector('#df-b325fa0f-f5fe-480f-b6e0-fd12f566fa8b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -6783,8 +6783,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-e5438de5-a176-4a61-88d2-853716c9bd1b">
-      <button class="colab-df-quickchart" onclick="quickchart('df-e5438de5-a176-4a61-88d2-853716c9bd1b')" title="Suggest charts" style="display:none;">
+    <div id="df-673ba963-8810-4a86-97ff-1e5fe26e365d">
+      <button class="colab-df-quickchart" onclick="quickchart('df-673ba963-8810-4a86-97ff-1e5fe26e365d')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -6900,14 +6900,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-e5438de5-a176-4a61-88d2-853716c9bd1b button');
+            document.querySelector('#df-673ba963-8810-4a86-97ff-1e5fe26e365d button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_b9444677-ef2b-4b69-b3d3-09f6c40e0af0">
+  <div id="id_fbcd347d-e733-4b6e-88ca-8146dbf6d950">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -6948,7 +6948,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_b9444677-ef2b-4b69-b3d3-09f6c40e0af0 button.colab-df-generate');
+        document.querySelector('#id_fbcd347d-e733-4b6e-88ca-8146dbf6d950 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -6985,11 +6985,11 @@ Name: count, dtype: int64
 <div id="cell-47" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df_gwangju <span class="op">=</span> election_results[<span class="st">'df_gwangju'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-48" class="cell" data-outputid="5f08c413-2f2f-4762-9343-eff75e89e811" data-execution_count="32">
+<div id="cell-48" class="cell" data-outputid="8c2777a9-6569-4991-a42d-488b1e4c5a19" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df_gwangju</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="32">
 
-  <div id="df-eac34bae-02d0-448d-b040-71d2a2bec2ea" class="colab-df-container">
+  <div id="df-87096a2e-43cb-46bb-98f5-c2c11c0761e6" class="colab-df-container">
     <div>
 
 
@@ -7173,7 +7173,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-eac34bae-02d0-448d-b040-71d2a2bec2ea')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-87096a2e-43cb-46bb-98f5-c2c11c0761e6')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -7223,12 +7223,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-eac34bae-02d0-448d-b040-71d2a2bec2ea button.colab-df-convert');
+        document.querySelector('#df-87096a2e-43cb-46bb-98f5-c2c11c0761e6 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-eac34bae-02d0-448d-b040-71d2a2bec2ea');
+        const element = document.querySelector('#df-87096a2e-43cb-46bb-98f5-c2c11c0761e6');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7248,8 +7248,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-18edd67a-16a4-41db-b614-efef14b48530">
-      <button class="colab-df-quickchart" onclick="quickchart('df-18edd67a-16a4-41db-b614-efef14b48530')" title="Suggest charts" style="display:none;">
+    <div id="df-b6c9f87d-a923-49da-99a2-3041648e44eb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-b6c9f87d-a923-49da-99a2-3041648e44eb')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -7365,14 +7365,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-18edd67a-16a4-41db-b614-efef14b48530 button');
+            document.querySelector('#df-b6c9f87d-a923-49da-99a2-3041648e44eb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_0bd937f6-711c-4baf-9d01-a1bf7f66c6d2">
+  <div id="id_c07593d9-a542-4bc4-bfd3-8e607377d3df">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -7413,7 +7413,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_0bd937f6-711c-4baf-9d01-a1bf7f66c6d2 button.colab-df-generate');
+        document.querySelector('#id_c07593d9-a542-4bc4-bfd3-8e607377d3df button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -7436,7 +7436,7 @@ Name: count, dtype: int64
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'광주광역시'</span>, <span class="st">'광주'</span>))</span>
 <span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-51" class="cell" data-outputid="6f2dbf1f-54f9-4126-d2b4-a4af9a89fe0f" data-execution_count="34">
+<div id="cell-51" class="cell" data-outputid="853cb4e1-90d3-468f-9103-71b26016e0b3" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df_gwangju.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="34">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -7468,11 +7468,11 @@ Name: count, dtype: int64
 <span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-53" class="cell" data-outputid="c2dd39ab-48b5-4436-dcc8-0e88f3a46073" data-execution_count="36">
+<div id="cell-53" class="cell" data-outputid="4e616dca-6cef-4042-c341-e850a976716b" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>df_gwangju</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="36">
 
-  <div id="df-1557151d-5304-4c02-b3c9-15c104046edb" class="colab-df-container">
+  <div id="df-c170f164-b9b4-42e9-a227-b2991908a78f" class="colab-df-container">
     <div>
 
 
@@ -7656,7 +7656,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1557151d-5304-4c02-b3c9-15c104046edb')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c170f164-b9b4-42e9-a227-b2991908a78f')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -7706,12 +7706,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1557151d-5304-4c02-b3c9-15c104046edb button.colab-df-convert');
+        document.querySelector('#df-c170f164-b9b4-42e9-a227-b2991908a78f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1557151d-5304-4c02-b3c9-15c104046edb');
+        const element = document.querySelector('#df-c170f164-b9b4-42e9-a227-b2991908a78f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7731,8 +7731,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-3d0b7f37-c019-438e-a88b-ab9e0bf2e65d">
-      <button class="colab-df-quickchart" onclick="quickchart('df-3d0b7f37-c019-438e-a88b-ab9e0bf2e65d')" title="Suggest charts" style="display:none;">
+    <div id="df-74557af0-6132-45b3-b175-5b0a79d5f534">
+      <button class="colab-df-quickchart" onclick="quickchart('df-74557af0-6132-45b3-b175-5b0a79d5f534')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -7848,14 +7848,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-3d0b7f37-c019-438e-a88b-ab9e0bf2e65d button');
+            document.querySelector('#df-74557af0-6132-45b3-b175-5b0a79d5f534 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_3750dc60-63b2-47a0-ab02-361275c1a73f">
+  <div id="id_e05f47d6-ed50-4971-a4e3-61ad9f2ba801">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -7896,7 +7896,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_3750dc60-63b2-47a0-ab02-361275c1a73f button.colab-df-generate');
+        document.querySelector('#id_e05f47d6-ed50-4971-a4e3-61ad9f2ba801 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -7933,11 +7933,11 @@ Name: count, dtype: int64
 <div id="cell-57" class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>df_daejeon <span class="op">=</span> election_results[<span class="st">'df_daejeon'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-58" class="cell" data-outputid="d68f48ed-c697-4532-d3b7-67e36ba14f72" data-execution_count="39">
+<div id="cell-58" class="cell" data-outputid="dec24b3f-0084-4b51-957d-e349fa0f91e1" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>df_daejeon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
 
-  <div id="df-109ca668-786e-44ab-aa9a-97ba3593a510" class="colab-df-container">
+  <div id="df-31d16e81-1f0e-4263-a3be-2c698959faa4" class="colab-df-container">
     <div>
 
 
@@ -8121,7 +8121,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-109ca668-786e-44ab-aa9a-97ba3593a510')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-31d16e81-1f0e-4263-a3be-2c698959faa4')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -8171,12 +8171,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-109ca668-786e-44ab-aa9a-97ba3593a510 button.colab-df-convert');
+        document.querySelector('#df-31d16e81-1f0e-4263-a3be-2c698959faa4 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-109ca668-786e-44ab-aa9a-97ba3593a510');
+        const element = document.querySelector('#df-31d16e81-1f0e-4263-a3be-2c698959faa4');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8196,8 +8196,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-aab99bf1-6eee-4c2f-b719-6b17b453009f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-aab99bf1-6eee-4c2f-b719-6b17b453009f')" title="Suggest charts" style="display:none;">
+    <div id="df-7d6d1217-5215-45c1-935c-610ccfd633c4">
+      <button class="colab-df-quickchart" onclick="quickchart('df-7d6d1217-5215-45c1-935c-610ccfd633c4')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -8313,14 +8313,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-aab99bf1-6eee-4c2f-b719-6b17b453009f button');
+            document.querySelector('#df-7d6d1217-5215-45c1-935c-610ccfd633c4 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_026f1a09-897d-4c80-b35c-bf6412fd4599">
+  <div id="id_1096f55a-2bc1-4b6a-92c4-014c438dbc07">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -8361,7 +8361,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_026f1a09-897d-4c80-b35c-bf6412fd4599 button.colab-df-generate');
+        document.querySelector('#id_1096f55a-2bc1-4b6a-92c4-014c438dbc07 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -8384,7 +8384,7 @@ Name: count, dtype: int64
 <span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'대전광역시'</span>, <span class="st">'대전'</span>))</span>
 <span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-61" class="cell" data-outputid="96072d15-1847-4214-fcb7-5db214742df0" data-execution_count="41">
+<div id="cell-61" class="cell" data-outputid="acba2735-07fd-4478-a0e3-fe4ccc015e48" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>df_daejeon.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="41">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -8416,11 +8416,11 @@ Name: count, dtype: int64
 <span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-63" class="cell" data-outputid="d5e78aeb-aa91-498d-93e3-c2447d303aef" data-execution_count="43">
+<div id="cell-63" class="cell" data-outputid="e2337cf0-7ca1-4137-bfa2-84a87a87ba62" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>df_daejeon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="43">
 
-  <div id="df-cfdbffec-e15c-46ab-a713-0134287f2ae3" class="colab-df-container">
+  <div id="df-71cc0999-7475-4196-8f79-3085542cd05f" class="colab-df-container">
     <div>
 
 
@@ -8604,7 +8604,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cfdbffec-e15c-46ab-a713-0134287f2ae3')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-71cc0999-7475-4196-8f79-3085542cd05f')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -8654,12 +8654,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cfdbffec-e15c-46ab-a713-0134287f2ae3 button.colab-df-convert');
+        document.querySelector('#df-71cc0999-7475-4196-8f79-3085542cd05f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cfdbffec-e15c-46ab-a713-0134287f2ae3');
+        const element = document.querySelector('#df-71cc0999-7475-4196-8f79-3085542cd05f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8679,8 +8679,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-0baf1437-3ea0-4349-9fdb-8b0fae7fb41c">
-      <button class="colab-df-quickchart" onclick="quickchart('df-0baf1437-3ea0-4349-9fdb-8b0fae7fb41c')" title="Suggest charts" style="display:none;">
+    <div id="df-f34f0c0b-784b-4fef-9569-7788648a257c">
+      <button class="colab-df-quickchart" onclick="quickchart('df-f34f0c0b-784b-4fef-9569-7788648a257c')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -8796,14 +8796,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-0baf1437-3ea0-4349-9fdb-8b0fae7fb41c button');
+            document.querySelector('#df-f34f0c0b-784b-4fef-9569-7788648a257c button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_8b918c94-3903-4c81-ba5a-caa4e0e4e879">
+  <div id="id_c8819d89-dd3a-4b1d-9ceb-c65bfd96c7ec">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -8844,7 +8844,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_8b918c94-3903-4c81-ba5a-caa4e0e4e879 button.colab-df-generate');
+        document.querySelector('#id_c8819d89-dd3a-4b1d-9ceb-c65bfd96c7ec button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -8881,11 +8881,11 @@ Name: count, dtype: int64
 <div id="cell-67" class="cell" data-execution_count="45">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>df_ulsan <span class="op">=</span> election_results[<span class="st">'df_ulsan'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-68" class="cell" data-outputid="2dbf82de-e91d-450c-d33c-f720f498a58e" data-execution_count="46">
+<div id="cell-68" class="cell" data-outputid="374c1d6a-c0f6-4977-b549-365b3036c015" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>df_ulsan</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="46">
 
-  <div id="df-be094e62-cdd5-476e-8dfd-485620c81d4a" class="colab-df-container">
+  <div id="df-4f1f357f-b0d6-4941-8f78-6003a60aa3ea" class="colab-df-container">
     <div>
 
 
@@ -9069,7 +9069,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-be094e62-cdd5-476e-8dfd-485620c81d4a')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4f1f357f-b0d6-4941-8f78-6003a60aa3ea')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -9119,12 +9119,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-be094e62-cdd5-476e-8dfd-485620c81d4a button.colab-df-convert');
+        document.querySelector('#df-4f1f357f-b0d6-4941-8f78-6003a60aa3ea button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-be094e62-cdd5-476e-8dfd-485620c81d4a');
+        const element = document.querySelector('#df-4f1f357f-b0d6-4941-8f78-6003a60aa3ea');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9144,8 +9144,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-f957371e-dc9e-4059-b448-5e96a23bcd6e">
-      <button class="colab-df-quickchart" onclick="quickchart('df-f957371e-dc9e-4059-b448-5e96a23bcd6e')" title="Suggest charts" style="display:none;">
+    <div id="df-18176180-4247-467e-b048-50203d6d69cb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-18176180-4247-467e-b048-50203d6d69cb')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -9261,14 +9261,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-f957371e-dc9e-4059-b448-5e96a23bcd6e button');
+            document.querySelector('#df-18176180-4247-467e-b048-50203d6d69cb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_4ad6adf5-25e4-4fa2-b253-ce3a902568fb">
+  <div id="id_ec6e7870-31ad-4df2-b8f3-c040c1b3ba89">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -9309,7 +9309,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_4ad6adf5-25e4-4fa2-b253-ce3a902568fb button.colab-df-generate');
+        document.querySelector('#id_ec6e7870-31ad-4df2-b8f3-c040c1b3ba89 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -9332,7 +9332,7 @@ Name: count, dtype: int64
 <span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'울산광역시'</span>, <span class="st">'울산'</span>))</span>
 <span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-71" class="cell" data-outputid="90845101-6af6-472d-8a98-57acf4943292" data-execution_count="48">
+<div id="cell-71" class="cell" data-outputid="08548623-9039-472c-a5cc-c9b293cf19af" data-execution_count="48">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df_ulsan.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -9364,11 +9364,11 @@ Name: count, dtype: int64
 <span id="cb57-19"><a href="#cb57-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb57-20"><a href="#cb57-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-73" class="cell" data-outputid="0fc4b07c-f882-4186-be6c-b0871625c677" data-execution_count="50">
+<div id="cell-73" class="cell" data-outputid="ff0b6e8b-0224-4c05-c1f1-6afbaa4ab240" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>df_ulsan</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
 
-  <div id="df-3ca1613c-3486-45d4-a6a3-fe5ae47fadbb" class="colab-df-container">
+  <div id="df-33c7d129-c05d-4c32-8bfd-4dfc4dd2449d" class="colab-df-container">
     <div>
 
 
@@ -9552,7 +9552,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-3ca1613c-3486-45d4-a6a3-fe5ae47fadbb')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-33c7d129-c05d-4c32-8bfd-4dfc4dd2449d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -9602,12 +9602,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-3ca1613c-3486-45d4-a6a3-fe5ae47fadbb button.colab-df-convert');
+        document.querySelector('#df-33c7d129-c05d-4c32-8bfd-4dfc4dd2449d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3ca1613c-3486-45d4-a6a3-fe5ae47fadbb');
+        const element = document.querySelector('#df-33c7d129-c05d-4c32-8bfd-4dfc4dd2449d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9627,8 +9627,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-3c561377-54b9-4166-b6de-f6aefca4ba79">
-      <button class="colab-df-quickchart" onclick="quickchart('df-3c561377-54b9-4166-b6de-f6aefca4ba79')" title="Suggest charts" style="display:none;">
+    <div id="df-3eae8292-11a5-4db3-bd6d-18ff89712e81">
+      <button class="colab-df-quickchart" onclick="quickchart('df-3eae8292-11a5-4db3-bd6d-18ff89712e81')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -9744,14 +9744,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-3c561377-54b9-4166-b6de-f6aefca4ba79 button');
+            document.querySelector('#df-3eae8292-11a5-4db3-bd6d-18ff89712e81 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_7ae8e0ad-f2cd-4e35-9d3a-0c7d177d3652">
+  <div id="id_3f06215d-c3c9-473d-9966-432146be0847">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -9792,7 +9792,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_7ae8e0ad-f2cd-4e35-9d3a-0c7d177d3652 button.colab-df-generate');
+        document.querySelector('#id_3f06215d-c3c9-473d-9966-432146be0847 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -9829,11 +9829,11 @@ Name: count, dtype: int64
 <div id="cell-77" class="cell" data-execution_count="52">
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>df_gyeonggi <span class="op">=</span> election_results[<span class="st">'df_gyeonggi'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-78" class="cell" data-outputid="1a632777-6fcf-4628-d86c-d39fd59c83a6" data-execution_count="53">
+<div id="cell-78" class="cell" data-outputid="6b1affa1-17d9-4877-a223-40cd345e730b" data-execution_count="53">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>df_gyeonggi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="53">
 
-  <div id="df-f56a66c1-b43e-4c62-9549-04081bcd8221" class="colab-df-container">
+  <div id="df-48a6409b-3264-470c-9708-f380e2d6ca1d" class="colab-df-container">
     <div>
 
 
@@ -10953,7 +10953,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f56a66c1-b43e-4c62-9549-04081bcd8221')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-48a6409b-3264-470c-9708-f380e2d6ca1d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -11003,12 +11003,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f56a66c1-b43e-4c62-9549-04081bcd8221 button.colab-df-convert');
+        document.querySelector('#df-48a6409b-3264-470c-9708-f380e2d6ca1d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f56a66c1-b43e-4c62-9549-04081bcd8221');
+        const element = document.querySelector('#df-48a6409b-3264-470c-9708-f380e2d6ca1d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11028,8 +11028,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-665729b6-8359-4d57-a049-38f0590a677c">
-      <button class="colab-df-quickchart" onclick="quickchart('df-665729b6-8359-4d57-a049-38f0590a677c')" title="Suggest charts" style="display:none;">
+    <div id="df-70c93727-83d7-4400-bd16-7a845fb4711c">
+      <button class="colab-df-quickchart" onclick="quickchart('df-70c93727-83d7-4400-bd16-7a845fb4711c')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -11145,14 +11145,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-665729b6-8359-4d57-a049-38f0590a677c button');
+            document.querySelector('#df-70c93727-83d7-4400-bd16-7a845fb4711c button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_792a5dcb-9085-4148-a2a9-9bd49dcc75b2">
+  <div id="id_3d80ec5c-c8f9-4326-ab6f-d3e0da5ccdb2">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -11193,7 +11193,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_792a5dcb-9085-4148-a2a9-9bd49dcc75b2 button.colab-df-generate');
+        document.querySelector('#id_3d80ec5c-c8f9-4326-ab6f-d3e0da5ccdb2 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -11216,7 +11216,7 @@ Name: count, dtype: int64
 <span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'경기도'</span>, <span class="st">'경기'</span>))</span>
 <span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-81" class="cell" data-outputid="0e8fb685-92f4-4960-b14b-1857e9578f91" data-execution_count="55">
+<div id="cell-81" class="cell" data-outputid="c1ceadd2-97b7-4319-ea1b-28f9f6b678b9" data-execution_count="55">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>df_gyeonggi.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="55">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -11248,11 +11248,11 @@ Name: count, dtype: int64
 <span id="cb65-19"><a href="#cb65-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb65-20"><a href="#cb65-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-83" class="cell" data-outputid="58df1927-0c0a-4594-bc8a-bcbb689a7d40" data-execution_count="57">
+<div id="cell-83" class="cell" data-outputid="06ade510-fb04-421f-b4ba-1a75b9b0cda6" data-execution_count="57">
 <div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>df_gyeonggi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="57">
 
-  <div id="df-f708de1c-fdda-46cd-ab32-360b8bbb5a8e" class="colab-df-container">
+  <div id="df-f5c71859-6f48-4a85-b884-1f21cac0ecf1" class="colab-df-container">
     <div>
 
 
@@ -12372,7 +12372,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f708de1c-fdda-46cd-ab32-360b8bbb5a8e')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f5c71859-6f48-4a85-b884-1f21cac0ecf1')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -12422,12 +12422,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f708de1c-fdda-46cd-ab32-360b8bbb5a8e button.colab-df-convert');
+        document.querySelector('#df-f5c71859-6f48-4a85-b884-1f21cac0ecf1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f708de1c-fdda-46cd-ab32-360b8bbb5a8e');
+        const element = document.querySelector('#df-f5c71859-6f48-4a85-b884-1f21cac0ecf1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -12447,8 +12447,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-d1a2cde4-70d0-4145-bcf6-dff22db07303">
-      <button class="colab-df-quickchart" onclick="quickchart('df-d1a2cde4-70d0-4145-bcf6-dff22db07303')" title="Suggest charts" style="display:none;">
+    <div id="df-f98ff23f-ee24-4595-b2b1-58c29f7b1cef">
+      <button class="colab-df-quickchart" onclick="quickchart('df-f98ff23f-ee24-4595-b2b1-58c29f7b1cef')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -12564,14 +12564,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d1a2cde4-70d0-4145-bcf6-dff22db07303 button');
+            document.querySelector('#df-f98ff23f-ee24-4595-b2b1-58c29f7b1cef button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_7b3fa23e-f19f-4626-a8e7-836d5ff6bd50">
+  <div id="id_7dd4a744-ad9e-4cd7-aff6-5437d8829a0c">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -12612,7 +12612,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_7b3fa23e-f19f-4626-a8e7-836d5ff6bd50 button.colab-df-generate');
+        document.querySelector('#id_7dd4a744-ad9e-4cd7-aff6-5437d8829a0c button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -12649,11 +12649,11 @@ Name: count, dtype: int64
 <div id="cell-87" class="cell" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>df_gangwon <span class="op">=</span> election_results[<span class="st">'df_gangwon'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-88" class="cell" data-outputid="0a9a9f42-06bd-4efa-ddb7-be464284e422" data-execution_count="60">
+<div id="cell-88" class="cell" data-outputid="cf995844-159d-402a-e047-349cbea9d785" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>df_gangwon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="60">
 
-  <div id="df-e18f6f8b-334b-4c69-8502-c03cc14364d6" class="colab-df-container">
+  <div id="df-5755bcb8-7b15-431a-85bf-7fd1b481d1da" class="colab-df-container">
     <div>
 
 
@@ -13149,7 +13149,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-e18f6f8b-334b-4c69-8502-c03cc14364d6')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5755bcb8-7b15-431a-85bf-7fd1b481d1da')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -13199,12 +13199,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-e18f6f8b-334b-4c69-8502-c03cc14364d6 button.colab-df-convert');
+        document.querySelector('#df-5755bcb8-7b15-431a-85bf-7fd1b481d1da button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-e18f6f8b-334b-4c69-8502-c03cc14364d6');
+        const element = document.querySelector('#df-5755bcb8-7b15-431a-85bf-7fd1b481d1da');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -13224,8 +13224,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-90cec8ba-71d3-4ef4-a70f-c2533fd257ff">
-      <button class="colab-df-quickchart" onclick="quickchart('df-90cec8ba-71d3-4ef4-a70f-c2533fd257ff')" title="Suggest charts" style="display:none;">
+    <div id="df-a55b212f-7265-444a-a3c1-5109d7e8ece5">
+      <button class="colab-df-quickchart" onclick="quickchart('df-a55b212f-7265-444a-a3c1-5109d7e8ece5')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -13341,14 +13341,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-90cec8ba-71d3-4ef4-a70f-c2533fd257ff button');
+            document.querySelector('#df-a55b212f-7265-444a-a3c1-5109d7e8ece5 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_6f5037f0-d736-40e7-90f5-7d98a7d314c6">
+  <div id="id_7c6bbbd7-a657-4a15-9f90-c4f49fb7455f">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -13389,7 +13389,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_6f5037f0-d736-40e7-90f5-7d98a7d314c6 button.colab-df-generate');
+        document.querySelector('#id_7c6bbbd7-a657-4a15-9f90-c4f49fb7455f button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -13412,7 +13412,7 @@ Name: count, dtype: int64
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'강원도'</span>, <span class="st">'강원'</span>))</span>
 <span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-91" class="cell" data-outputid="5aeb3703-192e-4d33-d3dd-83a13e94a0e9" data-execution_count="62">
+<div id="cell-91" class="cell" data-outputid="47d5cee5-aaab-4f9e-c46f-46d93e8eeab2" data-execution_count="62">
 <div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>df_gangwon.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="62">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -13444,11 +13444,11 @@ Name: count, dtype: int64
 <span id="cb73-19"><a href="#cb73-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb73-20"><a href="#cb73-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-93" class="cell" data-outputid="3b0e5c72-0f07-44f2-b758-eaa9b008a80c" data-execution_count="64">
+<div id="cell-93" class="cell" data-outputid="73e3a764-a4df-4e2e-f1c1-9b80eda021dc" data-execution_count="64">
 <div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>df_gangwon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="64">
 
-  <div id="df-d686446c-617a-49a3-8451-1984a0a7aad2" class="colab-df-container">
+  <div id="df-9c38f1bd-106f-4a51-b94c-c09c2f52c33b" class="colab-df-container">
     <div>
 
 
@@ -13944,7 +13944,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-d686446c-617a-49a3-8451-1984a0a7aad2')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9c38f1bd-106f-4a51-b94c-c09c2f52c33b')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -13994,12 +13994,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-d686446c-617a-49a3-8451-1984a0a7aad2 button.colab-df-convert');
+        document.querySelector('#df-9c38f1bd-106f-4a51-b94c-c09c2f52c33b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-d686446c-617a-49a3-8451-1984a0a7aad2');
+        const element = document.querySelector('#df-9c38f1bd-106f-4a51-b94c-c09c2f52c33b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14019,8 +14019,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-06b036c0-bfca-40f6-afde-1dba7fa4461e">
-      <button class="colab-df-quickchart" onclick="quickchart('df-06b036c0-bfca-40f6-afde-1dba7fa4461e')" title="Suggest charts" style="display:none;">
+    <div id="df-c634c096-27ba-43d2-b2b8-56e130618beb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-c634c096-27ba-43d2-b2b8-56e130618beb')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -14136,14 +14136,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-06b036c0-bfca-40f6-afde-1dba7fa4461e button');
+            document.querySelector('#df-c634c096-27ba-43d2-b2b8-56e130618beb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_233267b4-19a6-463e-88a4-42d67b216684">
+  <div id="id_ff54974b-3212-4030-81c5-666c14389b49">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -14184,7 +14184,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_233267b4-19a6-463e-88a4-42d67b216684 button.colab-df-generate');
+        document.querySelector('#id_ff54974b-3212-4030-81c5-666c14389b49 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -14221,11 +14221,11 @@ Name: count, dtype: int64
 <div id="cell-97" class="cell" data-execution_count="66">
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>df_chungbuk <span class="op">=</span> election_results[<span class="st">'df_chungbuk'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-98" class="cell" data-outputid="9cb1d11b-8ad1-4b54-cc74-b1d6c2d8788b" data-execution_count="67">
+<div id="cell-98" class="cell" data-outputid="a0938b16-dc23-4250-d7d8-6eec3f319480" data-execution_count="67">
 <div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>df_chungbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="67">
 
-  <div id="df-9d9d6ca8-8f3a-40d3-b8fb-942f871f2d94" class="colab-df-container">
+  <div id="df-2de1493b-dd84-492b-bfd2-cd8e466c603e" class="colab-df-container">
     <div>
 
 
@@ -14601,7 +14601,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-9d9d6ca8-8f3a-40d3-b8fb-942f871f2d94')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2de1493b-dd84-492b-bfd2-cd8e466c603e')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -14651,12 +14651,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-9d9d6ca8-8f3a-40d3-b8fb-942f871f2d94 button.colab-df-convert');
+        document.querySelector('#df-2de1493b-dd84-492b-bfd2-cd8e466c603e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-9d9d6ca8-8f3a-40d3-b8fb-942f871f2d94');
+        const element = document.querySelector('#df-2de1493b-dd84-492b-bfd2-cd8e466c603e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14676,8 +14676,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-5f1f3fb8-c016-4c57-881f-4841d694ecf9">
-      <button class="colab-df-quickchart" onclick="quickchart('df-5f1f3fb8-c016-4c57-881f-4841d694ecf9')" title="Suggest charts" style="display:none;">
+    <div id="df-33548ada-b27b-4e7b-9c66-06f5ebb32549">
+      <button class="colab-df-quickchart" onclick="quickchart('df-33548ada-b27b-4e7b-9c66-06f5ebb32549')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -14793,14 +14793,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-5f1f3fb8-c016-4c57-881f-4841d694ecf9 button');
+            document.querySelector('#df-33548ada-b27b-4e7b-9c66-06f5ebb32549 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_884d4377-7680-45df-a1b6-5ebec56e6e5c">
+  <div id="id_3a8dd554-5b4f-4658-9d45-9d8d9fba156b">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -14841,7 +14841,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_884d4377-7680-45df-a1b6-5ebec56e6e5c button.colab-df-generate');
+        document.querySelector('#id_3a8dd554-5b4f-4658-9d45-9d8d9fba156b button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -14864,7 +14864,7 @@ Name: count, dtype: int64
 <span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'충청북도'</span>, <span class="st">'충북'</span>))</span>
 <span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-101" class="cell" data-outputid="072d7466-a1fc-4837-ee5f-207299721a0f" data-execution_count="69">
+<div id="cell-101" class="cell" data-outputid="65207762-92e4-47ba-b5be-fdf4276a8663" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>df_chungbuk.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="69">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -14896,11 +14896,11 @@ Name: count, dtype: int64
 <span id="cb81-19"><a href="#cb81-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb81-20"><a href="#cb81-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-103" class="cell" data-outputid="6ec69ffc-b47c-403b-8abc-3145244532ef" data-execution_count="71">
+<div id="cell-103" class="cell" data-outputid="88136e67-1d64-41c5-9f31-a198e6f16a52" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>df_chungbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="71">
 
-  <div id="df-3f941d88-176e-461f-8218-84a66cb64ef5" class="colab-df-container">
+  <div id="df-1e4a5cae-1f7f-4b7f-97d3-8b824beadcb8" class="colab-df-container">
     <div>
 
 
@@ -15276,7 +15276,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-3f941d88-176e-461f-8218-84a66cb64ef5')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1e4a5cae-1f7f-4b7f-97d3-8b824beadcb8')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -15326,12 +15326,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-3f941d88-176e-461f-8218-84a66cb64ef5 button.colab-df-convert');
+        document.querySelector('#df-1e4a5cae-1f7f-4b7f-97d3-8b824beadcb8 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3f941d88-176e-461f-8218-84a66cb64ef5');
+        const element = document.querySelector('#df-1e4a5cae-1f7f-4b7f-97d3-8b824beadcb8');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -15351,8 +15351,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-34095565-34bb-437c-80c9-6146a7fa6ab6">
-      <button class="colab-df-quickchart" onclick="quickchart('df-34095565-34bb-437c-80c9-6146a7fa6ab6')" title="Suggest charts" style="display:none;">
+    <div id="df-9ba5632d-ebdb-45ba-8112-b6e2d31cca24">
+      <button class="colab-df-quickchart" onclick="quickchart('df-9ba5632d-ebdb-45ba-8112-b6e2d31cca24')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -15468,14 +15468,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-34095565-34bb-437c-80c9-6146a7fa6ab6 button');
+            document.querySelector('#df-9ba5632d-ebdb-45ba-8112-b6e2d31cca24 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_a7980458-c408-48aa-8c90-b1a1b7b817ac">
+  <div id="id_c15994ec-4d40-4dc0-8cab-a7299f1d5dc9">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -15516,7 +15516,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_a7980458-c408-48aa-8c90-b1a1b7b817ac button.colab-df-generate');
+        document.querySelector('#id_c15994ec-4d40-4dc0-8cab-a7299f1d5dc9 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -15553,11 +15553,11 @@ Name: count, dtype: int64
 <div id="cell-107" class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>df_chungnam <span class="op">=</span> election_results[<span class="st">'df_chungnam'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-108" class="cell" data-outputid="703f921a-d1e8-4e27-fef7-44c3af9b32c7" data-execution_count="74">
+<div id="cell-108" class="cell" data-outputid="32ff1573-e067-4461-ce1d-12d329bc4c45" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>df_chungnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="74">
 
-  <div id="df-6fac3afb-585e-4346-ab94-03f335e0bd42" class="colab-df-container">
+  <div id="df-2c1e7cac-22d3-4e37-b8dc-123d5a1490f2" class="colab-df-container">
     <div>
 
 
@@ -16005,7 +16005,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6fac3afb-585e-4346-ab94-03f335e0bd42')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2c1e7cac-22d3-4e37-b8dc-123d5a1490f2')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -16055,12 +16055,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6fac3afb-585e-4346-ab94-03f335e0bd42 button.colab-df-convert');
+        document.querySelector('#df-2c1e7cac-22d3-4e37-b8dc-123d5a1490f2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6fac3afb-585e-4346-ab94-03f335e0bd42');
+        const element = document.querySelector('#df-2c1e7cac-22d3-4e37-b8dc-123d5a1490f2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -16080,8 +16080,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-1a14619d-8cf9-451f-bce7-fd41fcf7b39f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-1a14619d-8cf9-451f-bce7-fd41fcf7b39f')" title="Suggest charts" style="display:none;">
+    <div id="df-daa7b9a9-fe7d-44d4-8c62-7b5fcdfc40f6">
+      <button class="colab-df-quickchart" onclick="quickchart('df-daa7b9a9-fe7d-44d4-8c62-7b5fcdfc40f6')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -16197,14 +16197,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-1a14619d-8cf9-451f-bce7-fd41fcf7b39f button');
+            document.querySelector('#df-daa7b9a9-fe7d-44d4-8c62-7b5fcdfc40f6 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_6166276e-bae3-4cf0-8ec0-05648bcc1c2d">
+  <div id="id_9849c143-0ad1-4579-914d-cff0a9e771c5">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -16245,7 +16245,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_6166276e-bae3-4cf0-8ec0-05648bcc1c2d button.colab-df-generate');
+        document.querySelector('#id_9849c143-0ad1-4579-914d-cff0a9e771c5 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -16268,7 +16268,7 @@ Name: count, dtype: int64
 <span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'충청남도'</span>, <span class="st">'충남'</span>))</span>
 <span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-111" class="cell" data-outputid="0a5520c7-d631-469c-8d25-0a6ee1e103ee" data-execution_count="76">
+<div id="cell-111" class="cell" data-outputid="4eb06bce-eaf0-4605-885f-8980bd43e99c" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>df_chungnam.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="76">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -16300,11 +16300,11 @@ Name: count, dtype: int64
 <span id="cb89-19"><a href="#cb89-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb89-20"><a href="#cb89-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-113" class="cell" data-outputid="8e71c79a-6e5b-4468-d729-a6ed617129d1" data-execution_count="78">
+<div id="cell-113" class="cell" data-outputid="66a90b69-7807-4b74-f596-c27111da550b" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>df_chungnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="78">
 
-  <div id="df-83617365-6c40-4033-8fd9-ee96e92e791c" class="colab-df-container">
+  <div id="df-d9f2867e-7e44-4d18-acea-1a7b67441d9e" class="colab-df-container">
     <div>
 
 
@@ -16752,7 +16752,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-83617365-6c40-4033-8fd9-ee96e92e791c')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d9f2867e-7e44-4d18-acea-1a7b67441d9e')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -16802,12 +16802,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-83617365-6c40-4033-8fd9-ee96e92e791c button.colab-df-convert');
+        document.querySelector('#df-d9f2867e-7e44-4d18-acea-1a7b67441d9e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-83617365-6c40-4033-8fd9-ee96e92e791c');
+        const element = document.querySelector('#df-d9f2867e-7e44-4d18-acea-1a7b67441d9e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -16827,8 +16827,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-43f17ad0-390a-45b1-81f5-05cce433266e">
-      <button class="colab-df-quickchart" onclick="quickchart('df-43f17ad0-390a-45b1-81f5-05cce433266e')" title="Suggest charts" style="display:none;">
+    <div id="df-865f0420-a60f-4c82-8802-3b5d49240c38">
+      <button class="colab-df-quickchart" onclick="quickchart('df-865f0420-a60f-4c82-8802-3b5d49240c38')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -16944,14 +16944,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-43f17ad0-390a-45b1-81f5-05cce433266e button');
+            document.querySelector('#df-865f0420-a60f-4c82-8802-3b5d49240c38 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_30df1800-5a05-472e-b7ee-9c6ed183f2c7">
+  <div id="id_1d6dd32e-3dd9-4a68-89af-173cba9d90a1">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -16992,7 +16992,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_30df1800-5a05-472e-b7ee-9c6ed183f2c7 button.colab-df-generate');
+        document.querySelector('#id_1d6dd32e-3dd9-4a68-89af-173cba9d90a1 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -17029,11 +17029,11 @@ Name: count, dtype: int64
 <div id="cell-117" class="cell" data-execution_count="80">
 <div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>df_jeonbuk <span class="op">=</span> election_results[<span class="st">'df_jeonbuk'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-118" class="cell" data-outputid="bf8cbb8b-7f9e-4e30-e0bf-19ffa4732f8f" data-execution_count="81">
+<div id="cell-118" class="cell" data-outputid="420b10a2-4dd0-4d60-d96d-cb60b16c0785" data-execution_count="81">
 <div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>df_jeonbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="81">
 
-  <div id="df-e5c034bf-2216-4d0b-aab5-01769d2c4caf" class="colab-df-container">
+  <div id="df-d95ccac3-9165-4ae4-9c15-e9cd4066ee8f" class="colab-df-container">
     <div>
 
 
@@ -17457,7 +17457,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-e5c034bf-2216-4d0b-aab5-01769d2c4caf')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d95ccac3-9165-4ae4-9c15-e9cd4066ee8f')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -17507,12 +17507,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-e5c034bf-2216-4d0b-aab5-01769d2c4caf button.colab-df-convert');
+        document.querySelector('#df-d95ccac3-9165-4ae4-9c15-e9cd4066ee8f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-e5c034bf-2216-4d0b-aab5-01769d2c4caf');
+        const element = document.querySelector('#df-d95ccac3-9165-4ae4-9c15-e9cd4066ee8f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -17532,8 +17532,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-354225bc-91ed-4baa-b632-c48eb052a6e0">
-      <button class="colab-df-quickchart" onclick="quickchart('df-354225bc-91ed-4baa-b632-c48eb052a6e0')" title="Suggest charts" style="display:none;">
+    <div id="df-885017c6-32dd-4828-8a27-4c5cd38d6b97">
+      <button class="colab-df-quickchart" onclick="quickchart('df-885017c6-32dd-4828-8a27-4c5cd38d6b97')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -17649,14 +17649,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-354225bc-91ed-4baa-b632-c48eb052a6e0 button');
+            document.querySelector('#df-885017c6-32dd-4828-8a27-4c5cd38d6b97 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_5291e777-41c2-4359-987c-7a07889285af">
+  <div id="id_d6d7f0e0-58c1-4601-ab74-ba628a6ae8a3">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -17697,7 +17697,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_5291e777-41c2-4359-987c-7a07889285af button.colab-df-generate');
+        document.querySelector('#id_d6d7f0e0-58c1-4601-ab74-ba628a6ae8a3 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -17720,7 +17720,7 @@ Name: count, dtype: int64
 <span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'전라북도'</span>, <span class="st">'전북'</span>))</span>
 <span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-121" class="cell" data-outputid="9c1ee1a8-ecd4-4aa4-92e7-34fd91e090d4" data-execution_count="83">
+<div id="cell-121" class="cell" data-outputid="1165f2b0-681b-4835-8edb-15758054544d" data-execution_count="83">
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>df_jeonbuk.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="83">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -17752,11 +17752,11 @@ Name: count, dtype: int64
 <span id="cb97-19"><a href="#cb97-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb97-20"><a href="#cb97-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-123" class="cell" data-outputid="104c86b6-9201-4132-a5d9-c7f1b2e1385e" data-execution_count="85">
+<div id="cell-123" class="cell" data-outputid="a7735674-14a8-4adc-eabb-625e1e886a2b" data-execution_count="85">
 <div class="sourceCode cell-code" id="cb98"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>df_jeonbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="85">
 
-  <div id="df-8e045944-4609-44ac-914d-6c4f09a7615f" class="colab-df-container">
+  <div id="df-17dba9e6-3973-4a9e-860d-e1d753b9e07a" class="colab-df-container">
     <div>
 
 
@@ -18180,7 +18180,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8e045944-4609-44ac-914d-6c4f09a7615f')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-17dba9e6-3973-4a9e-860d-e1d753b9e07a')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -18230,12 +18230,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8e045944-4609-44ac-914d-6c4f09a7615f button.colab-df-convert');
+        document.querySelector('#df-17dba9e6-3973-4a9e-860d-e1d753b9e07a button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8e045944-4609-44ac-914d-6c4f09a7615f');
+        const element = document.querySelector('#df-17dba9e6-3973-4a9e-860d-e1d753b9e07a');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -18255,8 +18255,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-0826a9b3-f894-4faa-a36b-1ea0b757fdba">
-      <button class="colab-df-quickchart" onclick="quickchart('df-0826a9b3-f894-4faa-a36b-1ea0b757fdba')" title="Suggest charts" style="display:none;">
+    <div id="df-dadc87ca-2bfb-4f36-a76f-60d600b9f12a">
+      <button class="colab-df-quickchart" onclick="quickchart('df-dadc87ca-2bfb-4f36-a76f-60d600b9f12a')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -18372,14 +18372,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-0826a9b3-f894-4faa-a36b-1ea0b757fdba button');
+            document.querySelector('#df-dadc87ca-2bfb-4f36-a76f-60d600b9f12a button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_ce977a0f-22c8-4dec-82a3-06a15de75661">
+  <div id="id_0fc097b9-2b7f-4d25-a8b8-de5f58eeeb9a">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -18420,7 +18420,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_ce977a0f-22c8-4dec-82a3-06a15de75661 button.colab-df-generate');
+        document.querySelector('#id_0fc097b9-2b7f-4d25-a8b8-de5f58eeeb9a button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -18457,11 +18457,11 @@ Name: count, dtype: int64
 <div id="cell-127" class="cell" data-execution_count="87">
 <div class="sourceCode cell-code" id="cb100"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>df_jeonnam <span class="op">=</span> election_results[<span class="st">'df_jeonnam'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-128" class="cell" data-outputid="80e5f692-987d-4f61-bf22-740c8c577840" data-execution_count="88">
+<div id="cell-128" class="cell" data-outputid="3ef3aa95-1a7a-4c9a-9185-210b9ec6b913" data-execution_count="88">
 <div class="sourceCode cell-code" id="cb101"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>df_jeonnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="88">
 
-  <div id="df-d08693e0-03cd-4106-a749-c642267eb8ea" class="colab-df-container">
+  <div id="df-b8f15121-e066-4530-8bbb-08b2c2539837" class="colab-df-container">
     <div>
 
 
@@ -19053,7 +19053,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-d08693e0-03cd-4106-a749-c642267eb8ea')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b8f15121-e066-4530-8bbb-08b2c2539837')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -19103,12 +19103,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-d08693e0-03cd-4106-a749-c642267eb8ea button.colab-df-convert');
+        document.querySelector('#df-b8f15121-e066-4530-8bbb-08b2c2539837 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-d08693e0-03cd-4106-a749-c642267eb8ea');
+        const element = document.querySelector('#df-b8f15121-e066-4530-8bbb-08b2c2539837');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -19128,8 +19128,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-6eed4af4-99a2-4746-b4ae-218fe91e5a4f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-6eed4af4-99a2-4746-b4ae-218fe91e5a4f')" title="Suggest charts" style="display:none;">
+    <div id="df-bb72107f-0c7b-4a0a-991e-f0a9bca503cc">
+      <button class="colab-df-quickchart" onclick="quickchart('df-bb72107f-0c7b-4a0a-991e-f0a9bca503cc')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -19245,14 +19245,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-6eed4af4-99a2-4746-b4ae-218fe91e5a4f button');
+            document.querySelector('#df-bb72107f-0c7b-4a0a-991e-f0a9bca503cc button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_f33f50c3-5246-4982-bc9e-1494d1a19357">
+  <div id="id_1ba32152-d934-47a5-a581-eec76e86530c">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -19293,7 +19293,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_f33f50c3-5246-4982-bc9e-1494d1a19357 button.colab-df-generate');
+        document.querySelector('#id_1ba32152-d934-47a5-a581-eec76e86530c button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -19316,7 +19316,7 @@ Name: count, dtype: int64
 <span id="cb102-3"><a href="#cb102-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'전라남도'</span>, <span class="st">'전남'</span>))</span>
 <span id="cb102-4"><a href="#cb102-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-131" class="cell" data-outputid="11b543ee-0def-4ae4-a270-149c67778ed3" data-execution_count="90">
+<div id="cell-131" class="cell" data-outputid="4cc37261-0fb7-46ca-9d3c-13f3bffe8e40" data-execution_count="90">
 <div class="sourceCode cell-code" id="cb103"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>df_jeonnam.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="90">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -19348,11 +19348,11 @@ Name: count, dtype: int64
 <span id="cb105-19"><a href="#cb105-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb105-20"><a href="#cb105-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-133" class="cell" data-outputid="794a9c05-4d5e-4fcd-9ad3-f6671468a007" data-execution_count="92">
+<div id="cell-133" class="cell" data-outputid="2f5a3ad1-d4fc-4543-e262-4148d1a016a0" data-execution_count="92">
 <div class="sourceCode cell-code" id="cb106"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a>df_jeonnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="92">
 
-  <div id="df-a001fff1-7738-43f4-8d85-65da09acd1c3" class="colab-df-container">
+  <div id="df-826e69b8-c0d5-4036-809a-59ef091e95ac" class="colab-df-container">
     <div>
 
 
@@ -19944,7 +19944,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a001fff1-7738-43f4-8d85-65da09acd1c3')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-826e69b8-c0d5-4036-809a-59ef091e95ac')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -19994,12 +19994,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a001fff1-7738-43f4-8d85-65da09acd1c3 button.colab-df-convert');
+        document.querySelector('#df-826e69b8-c0d5-4036-809a-59ef091e95ac button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a001fff1-7738-43f4-8d85-65da09acd1c3');
+        const element = document.querySelector('#df-826e69b8-c0d5-4036-809a-59ef091e95ac');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -20019,8 +20019,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-6ebbcae9-1f9f-4c37-936b-691b89dd109c">
-      <button class="colab-df-quickchart" onclick="quickchart('df-6ebbcae9-1f9f-4c37-936b-691b89dd109c')" title="Suggest charts" style="display:none;">
+    <div id="df-047fbd06-6586-4d7a-a15c-46f7a4aa68a2">
+      <button class="colab-df-quickchart" onclick="quickchart('df-047fbd06-6586-4d7a-a15c-46f7a4aa68a2')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -20136,14 +20136,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-6ebbcae9-1f9f-4c37-936b-691b89dd109c button');
+            document.querySelector('#df-047fbd06-6586-4d7a-a15c-46f7a4aa68a2 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_9d12fa66-d9fd-4ae6-9eed-0841dae2fb0e">
+  <div id="id_9f47c3fe-a54c-4eb6-b536-136b808ece89">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -20184,7 +20184,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_9d12fa66-d9fd-4ae6-9eed-0841dae2fb0e button.colab-df-generate');
+        document.querySelector('#id_9f47c3fe-a54c-4eb6-b536-136b808ece89 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -20221,11 +20221,11 @@ Name: count, dtype: int64
 <div id="cell-137" class="cell" data-execution_count="94">
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>df_gyeongbuk <span class="op">=</span> election_results[<span class="st">'df_gyeongbuk'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-138" class="cell" data-outputid="6e24215a-9d70-4ecb-b4ac-945eaf137af4" data-execution_count="95">
+<div id="cell-138" class="cell" data-outputid="fe46fc07-29ac-419f-cd84-663128ffc0f5" data-execution_count="95">
 <div class="sourceCode cell-code" id="cb109"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>df_gyeongbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="95">
 
-  <div id="df-dc614dd8-3e01-4f44-9e3a-caf0a3495150" class="colab-df-container">
+  <div id="df-f9bc388a-4ad3-4c61-a8c3-9721588f5275" class="colab-df-container">
     <div>
 
 
@@ -20865,7 +20865,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-dc614dd8-3e01-4f44-9e3a-caf0a3495150')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f9bc388a-4ad3-4c61-a8c3-9721588f5275')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -20915,12 +20915,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-dc614dd8-3e01-4f44-9e3a-caf0a3495150 button.colab-df-convert');
+        document.querySelector('#df-f9bc388a-4ad3-4c61-a8c3-9721588f5275 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-dc614dd8-3e01-4f44-9e3a-caf0a3495150');
+        const element = document.querySelector('#df-f9bc388a-4ad3-4c61-a8c3-9721588f5275');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -20940,8 +20940,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-74feb26e-25ae-4b61-a94a-c55c44e64fca">
-      <button class="colab-df-quickchart" onclick="quickchart('df-74feb26e-25ae-4b61-a94a-c55c44e64fca')" title="Suggest charts" style="display:none;">
+    <div id="df-288f8103-95a8-4743-ae2e-9c9b07c5bd30">
+      <button class="colab-df-quickchart" onclick="quickchart('df-288f8103-95a8-4743-ae2e-9c9b07c5bd30')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -21057,14 +21057,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-74feb26e-25ae-4b61-a94a-c55c44e64fca button');
+            document.querySelector('#df-288f8103-95a8-4743-ae2e-9c9b07c5bd30 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_a14bb65b-2997-4ddc-9dfd-07daf4c0c835">
+  <div id="id_cc467aac-28d6-447b-b7a4-f00d55a320bc">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -21105,7 +21105,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_a14bb65b-2997-4ddc-9dfd-07daf4c0c835 button.colab-df-generate');
+        document.querySelector('#id_cc467aac-28d6-447b-b7a4-f00d55a320bc button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -21128,7 +21128,7 @@ Name: count, dtype: int64
 <span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'경상북도'</span>, <span class="st">'경북'</span>))</span>
 <span id="cb110-4"><a href="#cb110-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-141" class="cell" data-outputid="5799064b-eb46-429d-ce4e-2f8305a7b983" data-execution_count="97">
+<div id="cell-141" class="cell" data-outputid="82819b53-16c1-4ca0-d3e5-8e4e943344ff" data-execution_count="97">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>df_gyeongbuk.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="97">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -21160,11 +21160,11 @@ Name: count, dtype: int64
 <span id="cb113-19"><a href="#cb113-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb113-20"><a href="#cb113-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-143" class="cell" data-outputid="d34f95b9-38a0-49a0-d0b6-33c3f24abe4e" data-execution_count="99">
+<div id="cell-143" class="cell" data-outputid="e1176823-5394-475e-cabb-b4ed2b8c8cd9" data-execution_count="99">
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a>df_gyeongbuk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="99">
 
-  <div id="df-b80660e4-7c50-4a8e-a477-4e80841e0714" class="colab-df-container">
+  <div id="df-7e5ef07a-159a-4995-b974-adb4990d69aa" class="colab-df-container">
     <div>
 
 
@@ -21804,7 +21804,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b80660e4-7c50-4a8e-a477-4e80841e0714')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7e5ef07a-159a-4995-b974-adb4990d69aa')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -21854,12 +21854,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b80660e4-7c50-4a8e-a477-4e80841e0714 button.colab-df-convert');
+        document.querySelector('#df-7e5ef07a-159a-4995-b974-adb4990d69aa button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b80660e4-7c50-4a8e-a477-4e80841e0714');
+        const element = document.querySelector('#df-7e5ef07a-159a-4995-b974-adb4990d69aa');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -21879,8 +21879,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-956dc190-bb31-4dd9-becb-dd4c8bacacc1">
-      <button class="colab-df-quickchart" onclick="quickchart('df-956dc190-bb31-4dd9-becb-dd4c8bacacc1')" title="Suggest charts" style="display:none;">
+    <div id="df-160f9f98-6fdf-403a-91b3-66a4f21d11a0">
+      <button class="colab-df-quickchart" onclick="quickchart('df-160f9f98-6fdf-403a-91b3-66a4f21d11a0')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -21996,14 +21996,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-956dc190-bb31-4dd9-becb-dd4c8bacacc1 button');
+            document.querySelector('#df-160f9f98-6fdf-403a-91b3-66a4f21d11a0 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_ff91849b-02e8-4d73-8d4e-61b45d741763">
+  <div id="id_b365e461-b75c-471c-9a1a-666fa05aa6d7">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -22044,7 +22044,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_ff91849b-02e8-4d73-8d4e-61b45d741763 button.colab-df-generate');
+        document.querySelector('#id_b365e461-b75c-471c-9a1a-666fa05aa6d7 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -22081,11 +22081,11 @@ Name: count, dtype: int64
 <div id="cell-147" class="cell" data-execution_count="101">
 <div class="sourceCode cell-code" id="cb116"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a>df_gyeongnam <span class="op">=</span> election_results[<span class="st">'df_gyeongnam'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-148" class="cell" data-outputid="42d381c5-65fb-429a-f761-8239ce51129e" data-execution_count="102">
+<div id="cell-148" class="cell" data-outputid="86359cf0-d440-4f61-ac9f-a791290800fc" data-execution_count="102">
 <div class="sourceCode cell-code" id="cb117"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a>df_gyeongnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="102">
 
-  <div id="df-6cfdc2ee-258a-4214-8257-aae4ff618439" class="colab-df-container">
+  <div id="df-678f3f73-64bb-41fa-a670-8359f119256d" class="colab-df-container">
     <div>
 
 
@@ -22629,7 +22629,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6cfdc2ee-258a-4214-8257-aae4ff618439')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-678f3f73-64bb-41fa-a670-8359f119256d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -22679,12 +22679,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6cfdc2ee-258a-4214-8257-aae4ff618439 button.colab-df-convert');
+        document.querySelector('#df-678f3f73-64bb-41fa-a670-8359f119256d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6cfdc2ee-258a-4214-8257-aae4ff618439');
+        const element = document.querySelector('#df-678f3f73-64bb-41fa-a670-8359f119256d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -22704,8 +22704,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-80b804a5-4b05-4186-9bad-ff3f1b6b4bf1">
-      <button class="colab-df-quickchart" onclick="quickchart('df-80b804a5-4b05-4186-9bad-ff3f1b6b4bf1')" title="Suggest charts" style="display:none;">
+    <div id="df-eafb6718-a1d7-45d0-b788-5098d5a97e15">
+      <button class="colab-df-quickchart" onclick="quickchart('df-eafb6718-a1d7-45d0-b788-5098d5a97e15')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -22821,14 +22821,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-80b804a5-4b05-4186-9bad-ff3f1b6b4bf1 button');
+            document.querySelector('#df-eafb6718-a1d7-45d0-b788-5098d5a97e15 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_392788fa-37db-4ad5-a785-e109ae6f1fa7">
+  <div id="id_670056a1-d7f1-43d5-9cc5-6290a9684b90">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -22869,7 +22869,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_392788fa-37db-4ad5-a785-e109ae6f1fa7 button.colab-df-generate');
+        document.querySelector('#id_670056a1-d7f1-43d5-9cc5-6290a9684b90 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -22892,7 +22892,7 @@ Name: count, dtype: int64
 <span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'경상남도'</span>, <span class="st">'경남'</span>))</span>
 <span id="cb118-4"><a href="#cb118-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-151" class="cell" data-outputid="01a001c5-0853-436a-d44b-734c01c86ca1" data-execution_count="104">
+<div id="cell-151" class="cell" data-outputid="6b100923-b499-4d71-9c44-d90929a75c74" data-execution_count="104">
 <div class="sourceCode cell-code" id="cb119"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>df_gyeongnam.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="104">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -22924,11 +22924,11 @@ Name: count, dtype: int64
 <span id="cb121-19"><a href="#cb121-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb121-20"><a href="#cb121-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-153" class="cell" data-outputid="4ae54759-d016-401e-af41-e09dfbefdd52" data-execution_count="106">
+<div id="cell-153" class="cell" data-outputid="a8d50c4c-4d51-4ea3-a56c-f0aebf5f5e34" data-execution_count="106">
 <div class="sourceCode cell-code" id="cb122"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a>df_gyeongnam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="106">
 
-  <div id="df-412f5d73-a0b2-4552-b638-166844c0b791" class="colab-df-container">
+  <div id="df-f5d143a9-08a2-4541-bdf0-f0282233ee98" class="colab-df-container">
     <div>
 
 
@@ -23472,7 +23472,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-412f5d73-a0b2-4552-b638-166844c0b791')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f5d143a9-08a2-4541-bdf0-f0282233ee98')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -23522,12 +23522,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-412f5d73-a0b2-4552-b638-166844c0b791 button.colab-df-convert');
+        document.querySelector('#df-f5d143a9-08a2-4541-bdf0-f0282233ee98 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-412f5d73-a0b2-4552-b638-166844c0b791');
+        const element = document.querySelector('#df-f5d143a9-08a2-4541-bdf0-f0282233ee98');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -23547,8 +23547,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-8b1f0ca4-0010-47db-9891-a4a3ebddac24">
-      <button class="colab-df-quickchart" onclick="quickchart('df-8b1f0ca4-0010-47db-9891-a4a3ebddac24')" title="Suggest charts" style="display:none;">
+    <div id="df-54b2a511-5907-43fa-8ce5-01f0320e4d6e">
+      <button class="colab-df-quickchart" onclick="quickchart('df-54b2a511-5907-43fa-8ce5-01f0320e4d6e')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -23664,14 +23664,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-8b1f0ca4-0010-47db-9891-a4a3ebddac24 button');
+            document.querySelector('#df-54b2a511-5907-43fa-8ce5-01f0320e4d6e button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_1647acb6-9b38-4ac7-8ab8-87b76f03ee36">
+  <div id="id_08f74b47-8a4a-4cd7-8d3a-7d99ce2ca2ea">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -23712,7 +23712,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_1647acb6-9b38-4ac7-8ab8-87b76f03ee36 button.colab-df-generate');
+        document.querySelector('#id_08f74b47-8a4a-4cd7-8d3a-7d99ce2ca2ea button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -23749,11 +23749,11 @@ Name: count, dtype: int64
 <div id="cell-157" class="cell" data-execution_count="108">
 <div class="sourceCode cell-code" id="cb124"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a>df_jeju <span class="op">=</span> election_results[<span class="st">'df_jeju'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-158" class="cell" data-outputid="9cc5e1d0-04dd-41e8-d2b7-d64db8988c0a" data-execution_count="109">
+<div id="cell-158" class="cell" data-outputid="7c1a17ba-bd4f-4168-c42b-895b3ce17144" data-execution_count="109">
 <div class="sourceCode cell-code" id="cb125"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a>df_jeju</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="109">
 
-  <div id="df-d7e151f8-9d13-4252-8989-eb971e16c5e0" class="colab-df-container">
+  <div id="df-f09a525d-aed6-4a31-9c6d-67e8bc85d23d" class="colab-df-container">
     <div>
 
 
@@ -23913,7 +23913,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-d7e151f8-9d13-4252-8989-eb971e16c5e0')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f09a525d-aed6-4a31-9c6d-67e8bc85d23d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -23963,12 +23963,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-d7e151f8-9d13-4252-8989-eb971e16c5e0 button.colab-df-convert');
+        document.querySelector('#df-f09a525d-aed6-4a31-9c6d-67e8bc85d23d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-d7e151f8-9d13-4252-8989-eb971e16c5e0');
+        const element = document.querySelector('#df-f09a525d-aed6-4a31-9c6d-67e8bc85d23d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -23988,8 +23988,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-be3da4f6-1aa9-49d5-b7dc-2c70078fcbc0">
-      <button class="colab-df-quickchart" onclick="quickchart('df-be3da4f6-1aa9-49d5-b7dc-2c70078fcbc0')" title="Suggest charts" style="display:none;">
+    <div id="df-ccbb12ce-00a5-499c-b445-edb2146562fb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ccbb12ce-00a5-499c-b445-edb2146562fb')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -24105,14 +24105,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-be3da4f6-1aa9-49d5-b7dc-2c70078fcbc0 button');
+            document.querySelector('#df-ccbb12ce-00a5-499c-b445-edb2146562fb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_fbdc9e1f-b298-42cb-99e5-e34eed091f30">
+  <div id="id_4f4f044a-5141-41a0-92b2-03452c62513a">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -24153,7 +24153,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_fbdc9e1f-b298-42cb-99e5-e34eed091f30 button.colab-df-generate');
+        document.querySelector('#id_4f4f044a-5141-41a0-92b2-03452c62513a button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -24176,7 +24176,7 @@ Name: count, dtype: int64
 <span id="cb126-3"><a href="#cb126-3" aria-hidden="true" tabindex="-1"></a>    .assign(시도<span class="op">=</span><span class="kw">lambda</span> df: df[<span class="st">'시도'</span>].replace(<span class="st">'제주특별자치도'</span>, <span class="st">'제주'</span>))</span>
 <span id="cb126-4"><a href="#cb126-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-161" class="cell" data-outputid="8c78991f-87b4-4741-de12-6128102cbd61" data-execution_count="111">
+<div id="cell-161" class="cell" data-outputid="2c92e073-e3f3-47ad-f03a-869435efcf61" data-execution_count="111">
 <div class="sourceCode cell-code" id="cb127"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a>df_jeju.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="111">
 <pre><code>Index(['시도', '구시군', '선거인수', '투표수', '보수정당', '진보정당', '그외정당', '무소속', '득표수_계',
@@ -24208,11 +24208,11 @@ Name: count, dtype: int64
 <span id="cb129-19"><a href="#cb129-19" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{<span class="st">'시도'</span>: <span class="st">'지역'</span>})</span>
 <span id="cb129-20"><a href="#cb129-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-163" class="cell" data-outputid="ce22ae9b-c00d-459f-b695-a97077d82fa3" data-execution_count="113">
+<div id="cell-163" class="cell" data-outputid="01ea1879-6670-4e44-9653-5666b2187f09" data-execution_count="113">
 <div class="sourceCode cell-code" id="cb130"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a>df_jeju</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="113">
 
-  <div id="df-0db2c29f-6ad1-4380-9a57-d79dba5daa78" class="colab-df-container">
+  <div id="df-c897c494-6503-44de-bd1b-74146977e625" class="colab-df-container">
     <div>
 
 
@@ -24372,7 +24372,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-0db2c29f-6ad1-4380-9a57-d79dba5daa78')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c897c494-6503-44de-bd1b-74146977e625')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -24422,12 +24422,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-0db2c29f-6ad1-4380-9a57-d79dba5daa78 button.colab-df-convert');
+        document.querySelector('#df-c897c494-6503-44de-bd1b-74146977e625 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-0db2c29f-6ad1-4380-9a57-d79dba5daa78');
+        const element = document.querySelector('#df-c897c494-6503-44de-bd1b-74146977e625');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -24447,8 +24447,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-1c9481fb-10ae-4d69-b517-c1bfce9320fa">
-      <button class="colab-df-quickchart" onclick="quickchart('df-1c9481fb-10ae-4d69-b517-c1bfce9320fa')" title="Suggest charts" style="display:none;">
+    <div id="df-d719c1ac-7393-43ac-aace-e402fcac4dd1">
+      <button class="colab-df-quickchart" onclick="quickchart('df-d719c1ac-7393-43ac-aace-e402fcac4dd1')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -24564,14 +24564,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-1c9481fb-10ae-4d69-b517-c1bfce9320fa button');
+            document.querySelector('#df-d719c1ac-7393-43ac-aace-e402fcac4dd1 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_bc222700-8e63-4a4b-95df-95fd77a96cd5">
+  <div id="id_c0a12134-30b4-4e8e-9318-72ad6ecc7019">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -24612,7 +24612,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_bc222700-8e63-4a4b-95df-95fd77a96cd5 button.colab-df-generate');
+        document.querySelector('#id_c0a12134-30b4-4e8e-9318-72ad6ecc7019 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -24659,11 +24659,11 @@ Name: count, dtype: int64
 <span id="cb132-8"><a href="#cb132-8" aria-hidden="true" tabindex="-1"></a>    pd.concat([<span class="bu">globals</span>()[<span class="ss">f'df_</span><span class="sc">{</span>region<span class="sc">}</span><span class="ss">'</span>] <span class="cf">for</span> region <span class="kw">in</span> AVAILABLE_REGIONS], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb132-9"><a href="#cb132-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-169" class="cell" data-outputid="5156d036-9b95-4605-96f8-576ece5d9ec4" data-execution_count="116">
+<div id="cell-169" class="cell" data-outputid="118e8d75-3d3b-4867-cdaf-84b691175b23" data-execution_count="116">
 <div class="sourceCode cell-code" id="cb133"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a>df_combined</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="116">
 
-  <div id="df-91de264e-c6c8-4eb5-ba04-74eaf5b250b5" class="colab-df-container">
+  <div id="df-60a50f0c-2bd6-4b85-ae33-35f99b803ed8" class="colab-df-container">
     <div>
 
 
@@ -24967,7 +24967,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-91de264e-c6c8-4eb5-ba04-74eaf5b250b5')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-60a50f0c-2bd6-4b85-ae33-35f99b803ed8')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -25017,12 +25017,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-91de264e-c6c8-4eb5-ba04-74eaf5b250b5 button.colab-df-convert');
+        document.querySelector('#df-60a50f0c-2bd6-4b85-ae33-35f99b803ed8 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-91de264e-c6c8-4eb5-ba04-74eaf5b250b5');
+        const element = document.querySelector('#df-60a50f0c-2bd6-4b85-ae33-35f99b803ed8');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -25042,8 +25042,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-a7aa994e-d6c3-460f-9bc6-400cbc5addfa">
-      <button class="colab-df-quickchart" onclick="quickchart('df-a7aa994e-d6c3-460f-9bc6-400cbc5addfa')" title="Suggest charts" style="display:none;">
+    <div id="df-4b1cf340-f952-4ec5-9df0-ca8b9d8e949f">
+      <button class="colab-df-quickchart" onclick="quickchart('df-4b1cf340-f952-4ec5-9df0-ca8b9d8e949f')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -25159,14 +25159,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-a7aa994e-d6c3-460f-9bc6-400cbc5addfa button');
+            document.querySelector('#df-4b1cf340-f952-4ec5-9df0-ca8b9d8e949f button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_8ca775ac-d860-4420-912b-5d286e025f67">
+  <div id="id_a40e2fbc-9e95-4f06-9ef6-680a77fc81fe">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -25207,7 +25207,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_8ca775ac-d860-4420-912b-5d286e025f67 button.colab-df-generate');
+        document.querySelector('#id_a40e2fbc-9e95-4f06-9ef6-680a77fc81fe button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -25239,11 +25239,11 @@ Name: count, dtype: int64
 <span id="cb135-8"><a href="#cb135-8" aria-hidden="true" tabindex="-1"></a>    pd.concat([<span class="bu">globals</span>()[<span class="ss">f'df_</span><span class="sc">{</span>region<span class="sc">}</span><span class="ss">2'</span>] <span class="cf">for</span> region <span class="kw">in</span> AVAILABLE_REGIONS], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb135-9"><a href="#cb135-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-173" class="cell" data-outputid="b6697d1b-f310-4157-d159-a1da7fe1a2a9" data-execution_count="119">
+<div id="cell-173" class="cell" data-outputid="9455910d-75ec-469e-945f-b28456e2ea3c" data-execution_count="119">
 <div class="sourceCode cell-code" id="cb136"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a>df_combined2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="119">
 
-  <div id="df-7cdc1fed-ad6f-4180-8be0-7c96befcafab" class="colab-df-container">
+  <div id="df-f16b19aa-e135-4912-934d-bdc4bef6b5a1" class="colab-df-container">
     <div>
 
 
@@ -25547,7 +25547,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-7cdc1fed-ad6f-4180-8be0-7c96befcafab')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f16b19aa-e135-4912-934d-bdc4bef6b5a1')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -25597,12 +25597,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-7cdc1fed-ad6f-4180-8be0-7c96befcafab button.colab-df-convert');
+        document.querySelector('#df-f16b19aa-e135-4912-934d-bdc4bef6b5a1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7cdc1fed-ad6f-4180-8be0-7c96befcafab');
+        const element = document.querySelector('#df-f16b19aa-e135-4912-934d-bdc4bef6b5a1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -25622,8 +25622,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-e6970753-3e0e-457d-aa82-4d0299e0c4a7">
-      <button class="colab-df-quickchart" onclick="quickchart('df-e6970753-3e0e-457d-aa82-4d0299e0c4a7')" title="Suggest charts" style="display:none;">
+    <div id="df-d51f22b6-0b95-4b24-81e6-7977b92609f6">
+      <button class="colab-df-quickchart" onclick="quickchart('df-d51f22b6-0b95-4b24-81e6-7977b92609f6')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -25739,14 +25739,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-e6970753-3e0e-457d-aa82-4d0299e0c4a7 button');
+            document.querySelector('#df-d51f22b6-0b95-4b24-81e6-7977b92609f6 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_987a7353-7999-4bc6-a619-40e26a3a73bc">
+  <div id="id_e6f35804-2785-43ef-bf7a-0a0fa2c0330e">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -25787,7 +25787,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_987a7353-7999-4bc6-a619-40e26a3a73bc button.colab-df-generate');
+        document.querySelector('#id_e6f35804-2785-43ef-bf7a-0a0fa2c0330e button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -25819,11 +25819,11 @@ Name: count, dtype: int64
 <span id="cb138-8"><a href="#cb138-8" aria-hidden="true" tabindex="-1"></a>    pd.concat([<span class="bu">globals</span>()[<span class="ss">f'df_</span><span class="sc">{</span>region<span class="sc">}</span><span class="ss">3'</span>] <span class="cf">for</span> region <span class="kw">in</span> AVAILABLE_REGIONS], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb138-9"><a href="#cb138-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-177" class="cell" data-outputid="98ffdd39-d09c-42d7-e920-638f73480e3b" data-execution_count="122">
+<div id="cell-177" class="cell" data-outputid="77bd9a74-cf9b-4930-d187-8b794283e43d" data-execution_count="122">
 <div class="sourceCode cell-code" id="cb139"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a>df_combined3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="122">
 
-  <div id="df-2f26d48b-395e-4174-a8d1-213a4d3d1436" class="colab-df-container">
+  <div id="df-21efcc7e-10a0-4adb-8be6-113f07f82319" class="colab-df-container">
     <div>
 
 
@@ -26247,7 +26247,7 @@ Name: count, dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-2f26d48b-395e-4174-a8d1-213a4d3d1436')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-21efcc7e-10a0-4adb-8be6-113f07f82319')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -26297,12 +26297,12 @@ Name: count, dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-2f26d48b-395e-4174-a8d1-213a4d3d1436 button.colab-df-convert');
+        document.querySelector('#df-21efcc7e-10a0-4adb-8be6-113f07f82319 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-2f26d48b-395e-4174-a8d1-213a4d3d1436');
+        const element = document.querySelector('#df-21efcc7e-10a0-4adb-8be6-113f07f82319');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -26322,8 +26322,8 @@ Name: count, dtype: int64
   </div>
 
 
-    <div id="df-7729bceb-2c26-44ec-a42d-ff90fc57074f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-7729bceb-2c26-44ec-a42d-ff90fc57074f')" title="Suggest charts" style="display:none;">
+    <div id="df-e444c5cc-201e-4922-83f3-264b88e4e1da">
+      <button class="colab-df-quickchart" onclick="quickchart('df-e444c5cc-201e-4922-83f3-264b88e4e1da')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -26439,14 +26439,14 @@ Name: count, dtype: int64
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-7729bceb-2c26-44ec-a42d-ff90fc57074f button');
+            document.querySelector('#df-e444c5cc-201e-4922-83f3-264b88e4e1da button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_5232d9b3-78fb-4e5f-aaa7-89d2a0705e76">
+  <div id="id_9c88ba86-20a4-4371-80b1-a1a54ec43f96">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -26487,7 +26487,7 @@ Name: count, dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_5232d9b3-78fb-4e5f-aaa7-89d2a0705e76 button.colab-df-generate');
+        document.querySelector('#id_9c88ba86-20a4-4371-80b1-a1a54ec43f96 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -26510,7 +26510,7 @@ Name: count, dtype: int64
 </section>
 <section id="batch-csv-files-to-zip" class="level1">
 <h1>Batch CSV Files to ZIP</h1>
-<div id="cell-180" class="cell" data-outputid="4ea7567b-0cb6-4213-b785-4d8702584de8" data-execution_count="124">
+<div id="cell-180" class="cell" data-outputid="3f2bbc69-e19c-45a9-d8c0-5808a9a309d3" data-execution_count="124">
 <div class="sourceCode cell-code" id="cb141"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zipfile</span>
 <span id="cb141-2"><a href="#cb141-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob</span>
 <span id="cb141-3"><a href="#cb141-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -26525,57 +26525,57 @@ Name: count, dtype: int64
 <span id="cb141-12"><a href="#cb141-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb141-13"><a href="#cb141-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total </span><span class="sc">{</span><span class="bu">len</span>(csv_files)<span class="sc">}</span><span class="ss"> files compressed."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Added: temp4_1_governor_daejeon_4.csv
+<pre><code>Added: temp4_2_governor_jeju_4.csv
+Added: temp4_3_governor_chungbuk_4.csv
+Added: temp4_1_governor_incheon_4.csv
+Added: temp4_1_governor_chungnam_4.csv
+Added: temp4_1_governor_jeju_4.csv
+Added: temp4_1_governor_gangwon_4.csv
+Added: temp4_3_governor_seoul_4.csv
+Added: temp4_1_governor_gyeonggi_4.csv
+Added: temp4_3_governor_jeonbuk_4.csv
 Added: temp4_3_governor_gyeonggi_4.csv
-Added: temp4_2_governor_jeju_4.csv
-Added: temp4_1_governor_4.csv
+Added: temp4_1_governor_seoul_4.csv
+Added: temp4_3_governor_gwangju_4.csv
 Added: temp4_3_governor_chungnam_4.csv
 Added: temp4_2_governor_gwangju_4.csv
-Added: temp4_3_governor_gangwon_4.csv
-Added: temp4_1_governor_jeju_4.csv
-Added: temp4_2_governor_jeonnam_4.csv
-Added: temp4_2_governor_chungbuk_4.csv
-Added: temp4_1_governor_chungnam_4.csv
-Added: temp4_1_governor_jeonbuk_4.csv
-Added: temp4_1_governor_gyeongnam_4.csv
-Added: temp4_1_governor_gyeongbuk_4.csv
-Added: temp4_2_governor_gyeonggi_4.csv
-Added: temp4_1_governor_gangwon_4.csv
-Added: temp4_3_governor_daegu_4.csv
-Added: temp4_2_governor_chungnam_4.csv
-Added: temp4_3_governor_jeonbuk_4.csv
-Added: temp4_2_governor_ulsan_4.csv
-Added: temp4_3_governor_gyeongbuk_4.csv
-Added: temp4_2_governor_seoul_4.csv
-Added: temp4_3_governor_jeonnam_4.csv
-Added: temp4_1_governor_ulsan_4.csv
-Added: temp4_3_governor_daejeon_4.csv
-Added: temp4_2_governor_jeonbuk_4.csv
-Added: temp4_2_governor_gyeongnam_4.csv
-Added: temp4_1_governor_daegu_4.csv
-Added: temp4_3_governor_4.csv
-Added: temp4_3_governor_seoul_4.csv
-Added: temp4_3_governor_ulsan_4.csv
-Added: temp4_1_governor_gyeonggi_4.csv
-Added: temp4_2_governor_4.csv
-Added: temp4_2_governor_daegu_4.csv
+Added: temp4_1_governor_4.csv
 Added: temp4_1_governor_gwangju_4.csv
-Added: temp4_1_governor_chungbuk_4.csv
-Added: temp4_3_governor_chungbuk_4.csv
-Added: temp4_3_governor_busan_4.csv
-Added: temp4_2_governor_incheon_4.csv
-Added: temp4_2_governor_gyeongbuk_4.csv
+Added: temp4_1_governor_daegu_4.csv
 Added: temp4_1_governor_jeonnam_4.csv
-Added: temp4_1_governor_busan_4.csv
-Added: temp4_2_governor_daejeon_4.csv
-Added: temp4_3_governor_incheon_4.csv
-Added: temp4_3_governor_gwangju_4.csv
-Added: temp4_1_governor_seoul_4.csv
-Added: temp4_1_governor_incheon_4.csv
-Added: temp4_2_governor_gangwon_4.csv
-Added: temp4_2_governor_busan_4.csv
+Added: temp4_3_governor_4.csv
+Added: temp4_3_governor_gyeongbuk_4.csv
 Added: temp4_3_governor_jeju_4.csv
+Added: temp4_3_governor_gangwon_4.csv
+Added: temp4_1_governor_busan_4.csv
+Added: temp4_1_governor_ulsan_4.csv
+Added: temp4_1_governor_chungbuk_4.csv
+Added: temp4_2_governor_jeonnam_4.csv
+Added: temp4_1_governor_gyeongnam_4.csv
+Added: temp4_2_governor_gyeongnam_4.csv
+Added: temp4_1_governor_daejeon_4.csv
+Added: temp4_2_governor_ulsan_4.csv
+Added: temp4_2_governor_incheon_4.csv
+Added: temp4_2_governor_gangwon_4.csv
+Added: temp4_2_governor_daegu_4.csv
+Added: temp4_2_governor_chungbuk_4.csv
+Added: temp4_2_governor_jeonbuk_4.csv
+Added: temp4_2_governor_chungnam_4.csv
+Added: temp4_3_governor_busan_4.csv
+Added: temp4_3_governor_ulsan_4.csv
+Added: temp4_2_governor_daejeon_4.csv
+Added: temp4_2_governor_gyeongbuk_4.csv
+Added: temp4_3_governor_daegu_4.csv
+Added: temp4_2_governor_busan_4.csv
+Added: temp4_2_governor_gyeonggi_4.csv
+Added: temp4_1_governor_jeonbuk_4.csv
+Added: temp4_3_governor_jeonnam_4.csv
+Added: temp4_3_governor_daejeon_4.csv
+Added: temp4_2_governor_4.csv
+Added: temp4_2_governor_seoul_4.csv
 Added: temp4_3_governor_gyeongnam_4.csv
+Added: temp4_1_governor_gyeongbuk_4.csv
+Added: temp4_3_governor_incheon_4.csv
 Total 51 files compressed.</code></pre>
 </div>
 </div>
